@@ -85,3 +85,36 @@ The immersive atmosphere, challenging gameplay, and strategic depth of the game 
 
 ## Have Fun Surviving!
 Embark on an epic journey of survival, face hordes of zombies, and test your skills in this thrilling text-based adventure. Good luck, and may your party emerge victorious against the undead menace!
+Certainly! Here's an explanation of the differences between long-range and short-range weapons in the context of the game:
+
+## Long-Range vs. Short-Range Weapons:
+
+### Long-Range Weapons:
+- **Definition:** Long-range weapons are designed to attack targets from a distance, typically beyond the reach of melee combat.
+- **Examples:** Rifles, bows, crossbows, and magical spells with a projectile component are common examples of long-range weapons.
+- **Advantages:**
+  - **Safety:** Long-range weapons allow characters to engage enemies from a safe distance, reducing the risk of close-quarters combat.
+  - **Versatility:** They provide flexibility in targeting enemies, allowing characters to attack specific targets or exploit weaknesses from afar.
+- **Limitations:**
+  - **Aim Dependency:** Long-range attacks often require higher aim stats to ensure accuracy, as targeting distant foes accurately can be challenging.
+  - **Limited Melee Utility:** Long-range weapons are less effective in melee combat situations, where enemies are in close proximity.
+
+### Short-Range Weapons:
+- **Definition:** Short-range weapons are designed for close-quarters combat, allowing characters to engage enemies at close range.
+- **Examples:** Swords, axes, daggers, and other melee weapons fall into the category of short-range weapons.
+- **Advantages:**
+  - **High Damage Potential:** Short-range weapons typically deal higher damage per hit compared to long-range weapons, making them potent in direct confrontations.
+  - **No Aim Dependency:** Attacks with short-range weapons do not rely heavily on aim stats, as the target is usually within close proximity.
+- **Limitations:**
+  - **Vulnerability:** Characters wielding short-range weapons are exposed to greater risk as they must engage enemies in close combat, putting themselves at risk of retaliation.
+  - **Limited Reach:** Short-range weapons are ineffective against distant foes, requiring characters to close the distance before engaging in combat.
+
+### Role in Combat:
+- Long-range weapons are ideal for characters who prefer to engage enemies from a safe distance, such as ranged attackers or spellcasters.
+- Short-range weapons are suitable for characters who excel in close-quarters combat, such as frontline fighters or melee specialists.
+
+### Tactical Considerations:
+- Players must consider the strengths and weaknesses of each weapon type when forming their party or planning combat strategies.
+- Balancing long-range and short-range capabilities within the party ensures versatility and adaptability in various combat scenarios.
+  
+Understanding the distinctions between long-range and short-range weapons allows players to make informed decisions when equ
