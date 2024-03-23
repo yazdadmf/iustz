@@ -28,8 +28,10 @@
                     
 					cout<<"ooooooooooooooooooooo"<<endl;
 		            DAM=DAM+DAM*(bodypart*0.2);
-		         
-		            enemy->gethit(DAM,bodypart);}
+		            if(enemy->type=="zombie"){
+                    Zombie* enemy1=dynamic_cast<Zombie*>(enemy);
+                    cout<<"player delt"<<DAM<<endl;
+		            enemy1->gethit(DAM,bodypart);}
 	        	}
 		        
 		        else{
@@ -40,15 +42,18 @@
 		            if(rand()%4){
                         //counter zombie
                     }
-                   
-		            enemy->gethit(DAM,bodypart);}
+                   if(enemy->type=="zombie"){
+                    Zombie* enemy1=dynamic_cast<Zombie*>(enemy);
+                    cout<<"player delt"<<DAM<<endl;
+		            enemy1->gethit(DAM,bodypart);}
 	        	}
 		  
 	        }
 	        else{
 	        	DAM=10;
-	         
-		            enemy->gethit(DAM,bodypart);}
+	         if(enemy->type=="zombie"){
+                    Zombie* enemy1=dynamic_cast<Zombie*>(enemy);
+		            enemy1->gethit(DAM,bodypart);}
 	        	}
 	        		stamina = stamina - DAM*(0.5);
 			}}
