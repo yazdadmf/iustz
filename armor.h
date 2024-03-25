@@ -58,5 +58,11 @@ Armor::Armor(string ID) {
         bodypart = 0;
     }
 }
+vector<string> validArmorIDs = {
+    "clownShoes", "clownJumpsuit", "clownHat", "samuraiHelmet", "samuraiChestplate", 
+    "samuraiLegGuards", "trashBin", "wheelchair", "flowerSkirt", "shrekTShirt", 
+    "bush", "militaryHelmet", "tacticalVest", "combatBoots", "scrapHelmet", 
+    "scrapChestplate", "scrapGreaves", "chainmailCoif", "plateArmor", "greavesSabatons"
+};
 #endif // ARMOR_H
 // Definition of the Meds class
