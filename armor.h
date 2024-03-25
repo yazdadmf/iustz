@@ -49,6 +49,27 @@ Armor::Armor(string ID) {
         defense = 0;
         bodypart = 3;
     }
+        else if (ID == "clownShoes") { 
+        id = ID; 
+        type = "armor"; 
+        detail = "Oversized shoes that squeak with every step, completing the clown ensemble."; 
+        defense = 15; // Assuming clown shoes offer some defense 
+        bodypart = 3; // Feet 
+    } 
+    else if (ID == "clownJumpsuit") { 
+        id = ID; 
+        type = "armor"; 
+        detail = "A polka-dotted and brightly colored jumpsuit, the staple of any clown's wardrobe."; 
+        defense = 30; // Assuming clown jumpsuit offers good defense 
+        bodypart = 2; // Middle 
+    } 
+    else if (ID == "clownHat") { 
+        id = ID; 
+        type = "armor"; 
+        detail = "A wacky and extravagant hat, complete with spinning propellers and attached balloons."; 
+        defense = 20; // Assuming clown hat offers moderate defense 
+        bodypart = 1; // Head 
+    }
     else {
         // Default values if ID doesn't match known armor types
         id = "non";
