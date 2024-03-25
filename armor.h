@@ -207,6 +207,13 @@ Armor::Armor(string ID) {
         defense = 50; // Assuming plate armor provides excellent torso protection 
         bodypart = 2; // Middle 
     }
+        else if (ID == "greavesSabatons") { 
+        id = ID; 
+        type = "armor"; 
+        detail = "Leg armor comprising metal shin guards (greaves) and foot armor (sabatons)."; 
+        defense = 40; // Assuming greaves and sabatons offer solid leg protection 
+        bodypart = 3; // Feet 
+    }
     else {
         // Default values if ID doesn't match known armor types
         id = "non";
