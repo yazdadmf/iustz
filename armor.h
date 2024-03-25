@@ -184,6 +184,29 @@ Armor::Armor(string ID) {
         defense = 40; // Assuming scrap chestplate provides good torso protection 
         bodypart = 2; // Middle 
     }
+        else if (ID == "scrapGreaves") { 
+        id = ID; 
+        type = "armor"; 
+        detail = "Leg armor made from welded metal scraps and reinforced with sturdy fabric."; 
+        defense = 30; // Assuming scrap greaves offer decent leg protection 
+        bodypart = 3; // Feet 
+    } 
+  
+    // Medieval Armor 
+    else if (ID == "chainmailCoif") { 
+        id = ID; 
+        type = "armor"; 
+        detail = "A hood-like headpiece made from interlocking metal rings."; 
+        defense = 25; // Assuming chainmail coif offers good head and neck protection 
+        bodypart = 1; // Head 
+    } 
+    else if (ID == "plateArmor") { 
+        id = ID; 
+        type = "armor"; 
+        detail = "Heavy armor consisting of metal plates worn over a padded underlayer."; 
+        defense = 50; // Assuming plate armor provides excellent torso protection 
+        bodypart = 2; // Middle 
+    }
     else {
         // Default values if ID doesn't match known armor types
         id = "non";
