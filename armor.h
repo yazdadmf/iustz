@@ -70,6 +70,27 @@ Armor::Armor(string ID) {
         defense = 20; // Assuming clown hat offers moderate defense 
         bodypart = 1; // Head 
     }
+        else  if (ID == "samuraiHelmet") { 
+        id = ID; 
+        type = "armor"; 
+        detail = "An ornate helmet adorned with elaborate designs, worn by samurai warriors for protection and intimidation."; 
+        defense = 25; // Assuming samurai helmet offers good defense 
+        bodypart = 1; // Head 
+    } 
+    else if (ID == "samuraiChestplate") { 
+        id = ID; 
+        type = "armor"; 
+        detail = "A sturdy chestplate crafted from high-quality materials, offering exceptional protection in battle."; 
+        defense = 40; // Assuming samurai chestplate offers excellent defense 
+        bodypart = 2; // Middle 
+    } 
+    else if (ID == "samuraiLegGuards") { 
+        id = ID; 
+        type = "armor"; 
+        detail = "Leg guards designed to withstand powerful blows and keep the wearer agile in combat."; 
+        defense = 30; // Assuming samurai leg guards offer good defense 
+        bodypart = 3; // Feet 
+    }
     else {
         // Default values if ID doesn't match known armor types
         id = "non";
