@@ -162,6 +162,28 @@ Armor::Armor(string ID) {
         defense = 40; // Assuming scrap chestplate provides good torso protection 
         bodypart = 2; // Middle 
     }
+        else if (ID == "combatBoots") { 
+        id = ID; 
+        type = "armor"; 
+        detail = "Sturdy combat boots designed to withstand rugged terrain and provide ankle support during extended missions."; 
+        defense = 25; // Assuming combat boots offer good defense 
+        bodypart = 3; // Feet 
+    } 
+        // Scrap Armor 
+    else if (ID == "scrapHelmet") { 
+        id = ID; 
+        type = "armor"; 
+        detail = "A makeshift helmet crafted from welded metal pieces and salvaged materials."; 
+        defense = 25; // Assuming scrap helmet offers decent head protection 
+        bodypart = 1; // Head 
+    } 
+    else if (ID == "scrapChestplate") { 
+        id = ID; 
+        type = "armor"; 
+        detail = "A chest armor piece constructed from repurposed metal sheets and reinforced with leather straps."; 
+        defense = 40; // Assuming scrap chestplate provides good torso protection 
+        bodypart = 2; // Middle 
+    }
     else {
         // Default values if ID doesn't match known armor types
         id = "non";
