@@ -230,11 +230,15 @@ if (ID == "Whip") {
     durability = rand() %40; // Random durability between 0 and 69
     detail = "A flexible weapon with a long history of use. The whip's long reach and swift strikes make it ideal for keeping enemies at bay or delivering punishing blows from a distance. Its crack echoes through the battlefield, striking fear into the hearts of adversaries.";
 }
-
-    }
-    void displayInfo() {
-        cout << "Weapon ID: " << id << ", Damage: " << damage << ", Durability: " << durability << endl;
-    }
+     void displayInfo() {
+    cout << "Weapon ID: " << id << endl;
+    cout << "Type: " << type << endl;
+    cout << "Damage: " << damage << endl;
+    cout << "Durability: " << durability << endl;
+    cout << "Durability Usage: " << DurabilityUsage << endl;
+    cout << "Long Range: " << (LongRange ? "Yes" : "No") << endl;
+    cout << "Description: " << detail << endl;
+}
 
     int use() {
         if (durability > 0) {
@@ -244,11 +248,14 @@ if (ID == "Whip") {
             return 0; // Weapon is broken, returns 0 damage
         }
     }
-
-    int getPrice() {
-        // calculating price
-        return damage * 20; // example
-    }
+int getPrice() {
+    return (damage * 10) + (durability * 5) - (DurabilityUsage * 2);
+}
 };
-
+vector<std::string> weaponIDs = {
+    "AK-47", "shocker", "bow", "Katana", "pistol", "Frying pan", "Rocket launcher",
+    "Mike Tyson Gloves", "Witcher steel sword", "Sniper rifle", "Machine gun", "stapler",
+    "Lucille", "Cane", "Axe", "Shotgun", "Electric Guitar", "Dagger", "Revolver",
+     "MTs-108", "Wrench", "Whip"
+};
 #endif 
