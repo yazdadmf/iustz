@@ -70,7 +70,63 @@ if (ID == "Frying pan") {
     type = "weapon"; 
     durability = 30; // Assuming the frying pan's durability is fixed
     detail = "Transformed from a kitchen utensil into a formidable weapon. Still, some sausages left on it if you're hungry.";
+}
+	    
+if (ID == "Rocket launcher") {
+    LongRange = true; // Typically long-range due to the nature of rockets
+    damage = 150;
+    DurabilityUsage = 1;
+    type = "weapon"; 
+    durability = rand() % 4; // Random durability between 0 and 3
+    detail = "High damage, low durability. Unleash destruction with this powerful rocket launcher.";
+}
+
+if (ID == "Mike Tyson Gloves") {
+    LongRange = false; // Melee weapon
+    damage = 10;
+    DurabilityUsage = 0; // Assuming no durability usage
+    type = "weapon"; 
+    durability = rand() % 100; // Random durability between 0 and 99
+    detail = "Once worn by the legendary boxer Mike Tyson, these gloves hold a special significance. Use them wisely.";
+}
+	if (ID == "Witcher steel sword") {
+    LongRange = false; // Melee weapon
+    damage = 40;
+    DurabilityUsage = 1; // Moderate durability usage
+    type = "weapon"; 
+    durability = rand() % 50; // Random durability between 0 and 109
+    detail = "Forged by skilled craftsmen in the tradition of witcher weaponry, the steel sword carries the legacy of monster hunters. Its keen edge is honed to perfection, capable of cleaving through even the toughest adversaries. A relic of a bygone era, it stands as a symbol of courage and determination in the face of darkness.";
+}
+	    	
 	
+	if (ID == "Sniper rifle") {
+    LongRange = true; // Typically long-range weapon
+    damage = 70;
+    DurabilityUsage = 1; // Moderate durability usage
+    type = "weapon"; 
+    durability = rand() % 12; // Random durability between 0 and 39
+    detail = "A precision firearm designed for long-range engagements. With its high-powered scope and exceptional accuracy, the sniper rifle is a formidable tool in the hands of a skilled marksman. Its lethal efficiency makes it a preferred choice for eliminating targets from a distance with surgical precision.";
+}
+	
+	
+	if (ID == "Machine gun") {
+    LongRange = false; // Typically used for short to mid-range combat
+    damage = 80;
+    DurabilityUsage = 10; // Moderate durability usage
+    type = "weapon"; 
+    durability = rand() % 90; // Random durability between 0 and 89
+    detail = "A heavy-duty automatic firearm capable of sustained rapid fire. While it lacks precision, its high rate of fire and substantial damage output make it devastating in close-quarters combat. The machine gun excels at suppressing enemy positions and laying down a barrage of bullets to overwhelm adversaries.";
+}
+	
+	if (ID == "stapler") {
+    LongRange = false; // Melee weapon
+    damage = 20;
+    DurabilityUsage = 1; // Moderate durability usage
+    type = "weapon"; 
+    durability = rand() % 40; // Random durability between 0 and 59
+    detail = "An office stapler repurposed into an unconventional but surprisingly effective melee weapon. Its sturdy build and sharp edges make it capable of delivering painful blows to adversaries. Perfect for those who prefer unconventional combat tactics or find themselves in need of a makeshift weapon.";
+}
+	    
         if(ID=="gun"){
         type="weapon";
         id=ID;
