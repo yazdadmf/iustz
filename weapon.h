@@ -152,7 +152,34 @@ if (ID == "Axe") {
     durability = rand() % 60; // Random durability between 0 and 59
     detail = "A traditional woodcutter's axe, honed to a razor-sharp edge. Its weight and cutting power make it a formidable choice for hacking through obstacles and enemies alike. With each swing, it cleaves through flesh and bone with brutal efficiency.";
 }
-	    
+	    if (ID == "Shotgun") {
+    LongRange = true; // Typically short to mid-range weapon
+    damage = 80;
+    DurabilityUsage = 2; // Moderate durability usage
+    type = "weapon"; 
+    durability = rand() % 12; // Random durability between 0 and 69
+    detail = "A classic scattergun favored for its devastating close-range firepower. With its wide spread of pellets, the shotgun delivers bone-crushing damage to anything in its path. Perfect for clearing rooms or stopping charging adversaries in their tracks.";
+}
+
+if (ID == "Electric Guitar") {
+    LongRange = false; // Melee weapon
+    damage = 40;
+    DurabilityUsage = 1; // Low durability usage
+    type = "weapon"; 
+    durability = rand() % 10; // Random durability between 0 and 44
+    detail = "An electric guitar repurposed as an improvised melee weapon. Its solid body and reinforced neck make it surprisingly effective for smashing skulls or delivering electrifying performances on the battlefield.";
+}
+
+if (ID == "Dagger") {
+    LongRange = false; // Melee weapon
+    damage = 30;
+    DurabilityUsage = 1; // Low durability usage
+    type = "weapon"; 
+    durability = rand() % 50; // Random durability between 0 and 49
+    detail = "A compact and deadly blade designed for swift and silent kills. The dagger's sharp edge and lightweight design make it ideal for concealed carry and close-quarters combat. With a flick of the wrist, it can slip past defenses and strike with lethal precision.";
+}
+
+	
         if(ID=="gun"){
         type="weapon";
         id=ID;
