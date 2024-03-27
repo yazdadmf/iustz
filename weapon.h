@@ -178,8 +178,14 @@ if (ID == "Dagger") {
     durability = rand() % 50; // Random durability between 0 and 49
     detail = "A compact and deadly blade designed for swift and silent kills. The dagger's sharp edge and lightweight design make it ideal for concealed carry and close-quarters combat. With a flick of the wrist, it can slip past defenses and strike with lethal precision.";
 }
-
-	
+	    if (ID == "Revolver") {
+    LongRange = true; // Short to mid-range firearm
+    damage = 50;
+    DurabilityUsage = 1; // Moderate durability usage
+    type = "weapon"; 
+    durability = rand() % 7; // Random durability between 0 and 69
+    detail = "A classic six-shooter revolver, known for its reliability and stopping power. With its timeless design and rugged construction, the revolver is a trusty sidearm in any situation. Whether fending off bandits or engaging in a duel at high noon, it's a firearm you can count on.";
+}
         if(ID=="gun"){
         type="weapon";
         id=ID;
@@ -198,6 +204,33 @@ if (ID == "Dagger") {
         durability=5;
         LongRange=false;
     }
+    }
+    if (ID == "MTs-108") {
+    LongRange = true; // Typically long-range weapon
+    damage = 70;
+    DurabilityUsage = 4; // Moderate durability usage
+    type = "weapon"; 
+    durability = rand() % 80; // Random durability between 0 and 89
+    detail = "An antique rifle with a storied history. Despite its age, the MTs-108 boasts impressive accuracy and stopping power. Its timeless design and rugged construction make it a valuable asset in any arsenal.";
+}
+if (ID == "Wrench") {
+    LongRange = false; // Melee weapon
+    damage = 30;
+    DurabilityUsage = 1; // Low to moderate durability usage
+    type = "weapon"; 
+    durability = rand() % 60; // Random durability between 0 and 59
+    detail = "A versatile tool turned makeshift weapon. The wrench's solid construction and hefty weight make it effective for bashing skulls or tightening bolts. Whether repairing machinery or fending off adversaries, it gets the job done.";
+}
+
+if (ID == "Whip") {
+    LongRange = false; // Melee weapon with some range
+    damage = 30;
+    DurabilityUsage = 1; // Low to moderate durability usage
+    type = "weapon"; 
+    durability = rand() %40; // Random durability between 0 and 69
+    detail = "A flexible weapon with a long history of use. The whip's long reach and swift strikes make it ideal for keeping enemies at bay or delivering punishing blows from a distance. Its crack echoes through the battlefield, striking fear into the hearts of adversaries.";
+}
+
     }
     void displayInfo() {
         cout << "Weapon ID: " << id << ", Damage: " << damage << ", Durability: " << durability << endl;
