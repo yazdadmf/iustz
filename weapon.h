@@ -126,6 +126,32 @@ if (ID == "Mike Tyson Gloves") {
     durability = rand() % 40; // Random durability between 0 and 59
     detail = "An office stapler repurposed into an unconventional but surprisingly effective melee weapon. Its sturdy build and sharp edges make it capable of delivering painful blows to adversaries. Perfect for those who prefer unconventional combat tactics or find themselves in need of a makeshift weapon.";
 }
+	 if (ID == "Lucille") {
+    LongRange = false; // Melee weapon
+    damage = 40;
+    DurabilityUsage = 1; // Moderate durability usage
+    type = "weapon"; 
+    durability = rand() % 35; // Random durability between 0 and 34
+    detail = "A baseball bat wrapped in barbed wire, inspired by the weapon wielded by the character Negan in 'The Walking Dead.' It's as brutal as it is iconic, capable of delivering devastating blows to enemies.";
+}
+
+if (ID == "Cane") {
+    LongRange = false; // Melee weapon
+    damage = 25;
+    DurabilityUsage = 1; // Low durability usage
+    type = "weapon"; 
+    durability = rand() % 40; // Random durability between 0 and 39
+    detail = "An ordinary walking cane repurposed as a makeshift weapon. Despite its humble appearance, it's surprisingly effective in close-quarters combat, offering both reach and blunt force to incapacitate foes.";
+}
+
+if (ID == "Axe") {
+    LongRange = false; // Melee weapon
+    damage = 50;
+    DurabilityUsage = 2; // Moderate durability usage
+    type = "weapon"; 
+    durability = rand() % 60; // Random durability between 0 and 59
+    detail = "A traditional woodcutter's axe, honed to a razor-sharp edge. Its weight and cutting power make it a formidable choice for hacking through obstacles and enemies alike. With each swing, it cleaves through flesh and bone with brutal efficiency.";
+}
 	    
         if(ID=="gun"){
         type="weapon";
