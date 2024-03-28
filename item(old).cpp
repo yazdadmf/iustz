@@ -472,7 +472,87 @@ if(i="Trash bin"){
     		
 		}
 
-
+if(i="Clown costume 3"){
+    		id=i;
+    		b="lower body";
+    		bodypart=b;
+    		type="2"; 
+            durablity=120; 
+            detail="loose pants";
+    		
+    		
+		}
+		if(i="Old base ball hat"){
+    		id=i;
+    		b="head";
+    		bodypart=b;
+    		type="1"; 
+            durablity=85; 
+            detail="my fathers legacy";
+    		
+    		
+		}
+		if(i="Naked"){
+    		id=i;
+    		b="upper body";
+    		bodypart=b;
+    		type="1"; 
+            durablity=0; 
+            detail="its getting warmer";
+    		
+    		
+		}
+		if(i="Towel"){
+    		id=i;
+    		b="lower body";
+    		bodypart=b;
+    		type="1"; 
+            durablity=30; 
+            detail="lets take a shower together";
+    		
+    		
+		}
+		if(i="Kitty ears"){
+    		id=i;
+    		b="head";
+    		bodypart=b;
+    		type="1"; 
+            durablity=50; 
+            detail="UWU";
+    		
+    		
+		}
+		
+		if(i="Boots of Hermes"){
+    		id=i;
+    		b="lower body";
+    		bodypart=b;
+    		type="magical"; 
+            durablity=100; 
+            detail="it belongs to a Greek God named Hermes and increases your stamina";
+    		
+    		
+		}
+		if(i="Infinity Gauntlet"){
+    		id=i;
+    		b="upper body";
+    		bodypart=b;
+    		type="magical"; 
+            durablity=80; 
+            detail="it Belongs to Thanos and increases your knowledge";
+    		
+    		
+		}
+		if(i="Skirt with flower pattern"){
+    		id=i;
+    		b="lower body";
+    		bodypart=b;
+    		type="1"; 
+            durablity=170; 
+            detail="Always remember you ,grandma";
+    		
+    		
+		}
 
 
 	
