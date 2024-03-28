@@ -409,3 +409,71 @@ if(i="Strength potion"){
        
 	   }
 }
+Armor::Armor(string id){
+
+if(i="Trash bin"){
+    		id=i;
+    		b="upper body"
+    		bodypart=b;
+    		type="1"; 
+            durablity=80; 
+            detail="not bad for a start";
+    		
+    		
+		}
+		if(i="Samurai armor 1"){
+    		id=i;
+    		b="head";
+    		bodypart=b;
+    		type="2"; 
+            durablity=160; 
+            detail="samurai helmet";
+    		
+    		
+		}
+		if(i="Samurai armor 2"){
+    		id=i;
+    		b="upper body";
+    		bodypart=b;
+    		type="2"; 
+            durablity=160; 
+            detail="part of samurai armor that covers your upper body";
+    		
+    		
+		}
+		if(i="Samurai armor 3"){
+    		id=i;
+    		b="lower body";
+    		bodypart=b;
+    		type="2"; 
+            durablity=160; 
+            detail="part of samurai armor that covers your lower body";
+    		
+    		
+		}
+		if(i="Clown costume 1"){
+    		id=i;
+    		b="head";
+    		bodypart=b;
+    		type="2"; 
+            durablity=120; 
+            detail="wig and a red small ball perfect for a clown like you";
+    		
+    		
+		}
+		if(i="Clown costume 2"){
+    		id=i;
+    		b="upper body";
+    		bodypart=b;
+    		type="2"; 
+            durablity=120; 
+            detail="clown shirt";
+    		
+    		
+		}
+
+
+
+
+	
+}
