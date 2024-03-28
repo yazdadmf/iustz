@@ -46,7 +46,56 @@ if(tzname=="zombie"){
             type="zombie";
             discription="Look at that body, it's a pity that she is dead now";
         }
-
+if(tzname=="explosive zombie"){
+            id=tzname;
+            damagee=40;
+            maxhealth=110;
+            health=110;
+            weakness="Molotov";
+            type="zombie";
+            discription="you have to be careful aroud this ones if he gets so close to you he says <<allahoo akbarrrr   boom>>";
+            specialattack;
+        }
+        if(tzname=="A zombie who didn't eat breakfast"){
+            id=tzname;
+            damagee=40;
+            maxhealth=110;
+            health=110;
+            weakness="air freshner";
+            type="zombie";
+            discription="This zombie has not eaten breakfast and her mouth smells like a dead dog, her breath is poisonous, be careful not to be too close to her";
+            specialattack;
+        }
+        if(tzname=="dancer zombie"){
+            id=tzname;
+            damagee=20;
+            maxhealth=120;
+            health=120;
+            weakness="Electric guitar";
+            type="zombie";
+            discription="he is such a good dancer be i bet he would love some Electric guitar";
+            
+        }
+        if(tzname=="leader zombie"){
+            id=tzname;
+            damagee=10;
+            maxhealth=100;
+            health=100;
+            weakness="machinegun";
+            type="zombie";
+            discription="This one can summon two zombies from the grave to hit you for one turn ";
+            specialattack;
+		}
+		if(tzname=="Conjoined twins"){
+            id=tzname;
+            damagee=20;
+            maxhealth=110;
+            health=110;
+            weakness="Axe";
+            type="zombie";
+            discription="They are unlucky from the beginning, be aware that they have three hands and with the third hand they can give you a confusing uppercut, Separate them with your ax ";
+            specialattack;
+		}
 
 
 
