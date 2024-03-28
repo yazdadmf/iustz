@@ -709,13 +709,72 @@ if(i="Batarang"){
 		
     	}
 
-
-
-
-
-
-
-
+if(i="snow ball"){
+     	u=true;
+	    instant=20;
+	    id=i;
+	    usable=u;
+	    instantdamage=instant;
+	    type="1"; 
+        durablity=1; 
+        detail="its getting a little cold here";	
+		
+    	}
+    	if(i="peel of banana"){
+     	u=true;
+	    instant=30;
+	    id=i;
+	    usable=u;
+	    instantdamage=instant;
+	    type="1"; 
+        durablity=1; 
+        detail="be careful not to slip";	
+		
+    	}
+    	if(i="shuriken"){
+     	u=true;
+	    instant=60;
+	    id=i;
+	    usable=u;
+	    instantdamage=instant;
+	    type="1"; 
+        durablity=1; 
+        detail="makes you feel like a real ninja";	
+		
+    	}
+    	if(i="Rock"){
+     	u=true;
+	    instant=20;
+	    id=i;
+	    usable=u;
+	    instantdamage=instant;
+	    type="1"; 
+        durablity=1; 
+        detail="small piece of rock";	
+		
+    	}
+    	if(i="Oxford dictionary"){
+     	u=true;
+	    instant=40;
+	    id=i;
+	    usable=u;
+	    instantdamage=instant;
+	    type="1"; 
+        durablity=1; 
+        detail="why not its useful in this way";	
+		
+    	}
+    	if(i="smoke bomb"){
+     	u=true;
+	    instant=40;
+	    id=i;
+	    usable=u;
+	    instantdamage=instant;
+	    type="1"; 
+        durablity=1; 
+        detail="confuse your enemy";	
+		
+    	}
 }
 
 
