@@ -1,0 +1,24 @@
+    void applyeffects() {
+        int damage=0;
+	    for (int i=0;i<effects.size();i++) {
+	       
+            if(effects[i].first>0){
+	        string effectName = effects[i].second;
+	
+	        if (effectName == "fire") {
+	           
+	                damage += 5;
+	        } 
+			else if (effectName == "PoisonDamage") {
+	            damage += 4;
+	        } 
+            effects[i].first-=1;}
+            else{
+                 effects.erase(effects.begin() + i);
+                 i--;
+            }
+	    }
+        health-=damage;
+        if(health>0){}
+        else{health=0;}
+	}
