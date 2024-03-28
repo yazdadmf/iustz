@@ -1,0 +1,15 @@
+void gethit(int DAM,int bodypart){
+        int DAM1=DAM;
+    
+        if(rand()%10==0){DAM1*=0.7;}
+        switch(bodypart){
+            case 1:
+                if(weakness=="head"){DAM1*=2;}
+            case 2:
+                if(weakness=="middle"){DAM1*=2;}
+            case 3:
+                if(weakness=="lower"){DAM1*=2;}
+        }
+        	
+        health-=DAM1;
+    }
