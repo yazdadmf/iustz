@@ -339,3 +339,73 @@ if(i="pistol"){
 	}
 	
 }
+Meds::Meds(string id){
+if(i="Strength potion"){
+	
+	   id=i;
+	   type="1"; 
+       durablity=1; 
+       detail="A potion that increases yor strength level";
+	   }
+	   
+	   if(i="knowledge potion"){
+	
+	   id=i;
+	   type="1"; 
+       durablity=1; 
+       detail="A potion that increases yor knowledge level";
+	   }
+	   
+	   if(i="stamina potion"){
+	
+	   id=i;
+	   type="1"; 
+       durablity=1; 
+       detail="A potion that increases yor stamina level";
+	   }
+	   
+	   if(i="Peter Griffin"){
+	
+	   id=i;
+	   type="summoner"; 
+       durablity=1; 
+       detail="A potion that Summons Peter Griffin from Hell to destroy your enemies";
+	   }
+	   
+	   if(i="Ecstasy"){
+	
+	   id=i;
+	   type="drugs"; 
+       durablity=1; 
+       detail="hell yeah@#$%^&*()";
+	   }
+	   
+	   if(i="Marijuana"){
+	
+	   id=i;
+	   type="drugs"; 
+       durablity=1; 
+       detail="that gets you high and increases yor stamina+knowledge+Strength level ";
+       
+       
+	   }
+	   if(i="steroids"){
+	
+	   id=i;
+	   type="1"; 
+       durablity=1; 
+       detail="makes you stronger for a short period of time";
+       
+       
+	   }
+	   
+	   if(i="mushroom"){
+	
+	   id=i;
+	   type="1"; 
+       durablity=1; 
+       detail="very rare item that disappears your enemy";
+       
+       
+	   }
+}
