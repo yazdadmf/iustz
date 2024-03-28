@@ -70,3 +70,73 @@ if(i="AK-47"){
     detail="slice them like a piece of cake";
     
 	}
+if(i="pistol"){
+	
+	id=i;
+	l=false;
+	d=50;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="2"; 
+    durablity=90; 
+    detail="what do you want to know?it shoots";
+    
+	}
+	if(i="Frying pan"){
+	
+	id=i;
+	l=false;
+	d=30;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="melee weapon"; 
+    durablity=70; 
+    detail="there is still some sausages left on it if you are hungry";
+    
+	}
+	if(i="Rocket launcher"){
+	
+	id=i;
+	l=true;
+	d=600;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="heavy"; 
+    durablity=5; 
+    detail="high damage low durability ";
+    
+	}
+	if(i="Mike Tyson  Gloves"){
+	
+	id=i;
+	l=false;
+	d=60;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="melee weapon"; 
+    durablity=90; 
+    detail="the fact that Mike Tyson wore them made them special";
+    
+	}
+	if(i="Witcher steel sword"){
+	
+	id=i;
+	l=false;
+	d=80;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="melee weapon"; 
+    durablity=110; 
+    detail="i stole it from Geralt of Rivia";
+    
+	}
