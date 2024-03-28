@@ -140,3 +140,103 @@ if(i="pistol"){
     detail="i stole it from Geralt of Rivia";
     
 	}
+	if(i="Sniper rifle"){
+	
+	id=i;
+	l=true;
+	d=140;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="heavy"; 
+    durablity=40; 
+    detail="get them Dead shot";
+    
+	}
+	
+	if(i="Machine gun"){
+	
+	id=i;
+	l=false;
+	d=100;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="heavy"; 
+    durablity=90; 
+    detail="high damage high durability what else do you want";
+    
+	}
+	if(i="stapler"){
+	
+	id=i;
+	l=false;
+	d=40;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="2"; 
+    durablity=60; 
+    detail="it reminds me of my childhood";
+    
+	}
+	if(i="Lucille"){
+	
+	id=i;
+	l=false;
+	d=59;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="melee weapon"; 
+    durablity=35; 
+    detail="a baseball bat that belongs to Negan";
+    
+	}
+	if(i="cane"){
+	
+	id=i;
+	l=false;
+	d=30;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="melee weapon"; 
+    durablity=30; 
+    detail="no one can stop me from playing with this";
+    
+	}
+	if(i="ax"){
+	
+	id=i;
+	l=false;
+	d=70;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="melee weapon"; 
+    durablity=45; 
+    detail="sharp";
+    
+	}
+	if(i="shut gun"){
+	
+	id=i;
+	l=false;
+	d=130;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="heavy weapon"; 
+    durablity=60; 
+    detail="there is always a shut gun bat in this kind of games";
+    
+	}
+}
