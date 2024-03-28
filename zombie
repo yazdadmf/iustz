@@ -96,7 +96,65 @@ if(tzname=="explosive zombie"){
             discription="They are unlucky from the beginning, be aware that they have three hands and with the third hand they can give you a confusing uppercut, Separate them with your ax ";
             specialattack;
 		}
-
+if(tzname=="Nigger zombie"){
+            id=tzname;
+            damagee=40;
+            maxhealth=130;
+            health=130;
+            weakness="Whip";
+            type="zombie";
+            discription="Because of working in the cotton fields, he has a strong physique and always carries his sickle with her, be careful not to throw it at you.";
+            specialattack;
+		}
+		if(tzname=="Cyborg zombie"){
+            id=tzname;
+            damagee=60;
+            maxhealth=160;
+            health=160;
+            weakness="watergun";
+            type="zombie";
+            discription="He died while testing his new abilities and turned into a zombie. Watch out for the rockets on his back";
+            specialattack;
+		}
+		if(tzname=="zombie succubus"){
+            id=tzname;
+            damagee=30;
+            maxhealth=130;
+            health=130;
+            weakness="witcher steel sword";
+            type="zombie";
+            discription="if you get deceived by this beautiful creature, you will be confused for several turns";
+        }
+		if(tzname=="bin Laden zombie"){
+            id=tzname;
+            damagee=30;
+            maxhealth=100;
+            health=100;
+            weakness="Rocket launcher";
+            type="zombie";
+            discription="The killer of the twins wants to kill you now. The plane will fall towards you whenever he wants";
+        }
+        if(tzname=="zombie "+name){
+            id=tzname;
+            damagee=50;
+            maxhealth=200;
+            health=200;
+            weakness;
+            type="zombie";
+            discription="Face your self";
+            specialattack;
+        }
+        if(tzname=="Zombie batman"){
+            id=tzname;
+            damagee=100;
+            maxhealth=300;
+            health=300;
+            weakness="lucille";
+            type="zombie";
+            discription="a tortured, brooding vigilante dressed as a bat who fights against evil and strikes fear into the hearts of criminals everywhere,never meet your heroes";
+            specialattack;
+		}
+        
 
 
 
