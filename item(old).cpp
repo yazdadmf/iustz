@@ -554,6 +554,97 @@ if(i="Clown costume 3"){
     		
 		}
 
-
+if(i="cowboy hat"){
+    		id=i;
+    		b="head";
+    		bodypart=b;
+    		type="1"; 
+            durablity=90; 
+            detail="a cowboy hat with hole on it";
+    		
+    		
+		}
+		if(i="Wheelchair"){
+    		id=i;
+    		b="lower body";
+    		bodypart=b;
+    		type="1"; 
+            durablity=100; 
+            detail="i will go straight to hell";
+    		
+    		
+		}
+		if(i="zoro`s cloak"){
+    		id=i;
+    		b="upper body";
+    		bodypart=b;
+    		type="1"; 
+            durablity=115; 
+            detail="i love spain";
+    		
+    		
+		}
+		if(i="viking helmet"){
+    		id=i;
+    		b="head";
+    		bodypart=b;
+    		type="1"; 
+            durablity=110; 
+            detail="a hat with two horns on it";
+    		
+    		
+		}
+		
+		if(i="watermelon hat"){
+    		id=i;
+    		b="head";
+    		bodypart=b;
+    		type="2"; 
+            durablity=50; 
+            detail="a hat made of watermelon rind";
+    		
+		}
+		
+		if(i="watermelon bra"){
+    		id=i;
+    		b="upper body";
+    		bodypart=b;
+    		type="2"; 
+            durablity=50; 
+            detail="a little big for me but that will do the trick";
+    		
+		}
+		
+		if(i="shrek T shirt"){
+    		id=i;
+    		b="upper body";
+    		bodypart=b;
+    		type="1"; 
+            durablity=150; 
+            detail="shrek is love,shrek is life";
+    		
+		}
+		
+		if(i="bush"){
+    		id=i;
+    		b="lower body";
+    		bodypart=b;
+    		type="1"; 
+            durablity=60; 
+            detail="its itchy but it can cover my lower body";
+    		
+		}
+		
+		if(i="omni mans mustache"){
+    		id=i;
+    		b="head";
+    		bodypart=b;
+    		type="1"; 
+            durablity=100; 
+            detail="it makes me look older";
+    		
+		}
+		
+		
 	
 }
