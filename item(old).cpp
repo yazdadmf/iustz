@@ -648,3 +648,75 @@ if(i="cowboy hat"){
 		
 	
 }
+Throwables::Throwables(string id){
+
+if(i="Batarang"){
+     	u=true;
+	    instant=30;
+	    id=i;
+	    usable=u;
+	    instantdamage=instant;
+	    type="1"; 
+        durablity=2; 
+        detail="for Batman lovers";	
+		
+    	}
+    	
+    	if(i="Cute cat"){
+     	u=true;
+	    instant=50;
+	    id=i;
+	    usable=u;
+	    instantdamage=instant;
+	    type="1"; 
+        durablity=1; 
+        detail="i love animals";	
+    	}
+    	
+    	if(i="A sock that smells like shit"){
+     	u=true;
+	    instant=15;
+	    id=i;
+	    usable=u;
+	    instantdamage=instant;
+	    type="1"; 
+        durablity=3; 
+        detail="i found it under my bed,i cant remember washing it";		
+		
+    	}
+    	
+    	if(i="Slippers"){
+     	u=true;
+	    instant=40;
+	    id=i;
+	    usable=u;
+	    instantdamage=instant;
+	    type="magical"; 
+        durablity=1; 
+        detail="no matter how bad your aim is,you cant miss a shot with this";		
+		
+    	}
+    	
+    	if(i="grenade"){
+     	u=true;
+	    instant=100;
+	    id=i;
+	    usable=u;
+	    instantdamage=instant;
+	    type="1"; 
+        durablity=1; 
+        detail="booommmm";	
+		
+    	}
+
+
+
+
+
+
+
+
+}
+
+
+
