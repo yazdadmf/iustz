@@ -239,4 +239,74 @@ if(i="pistol"){
     detail="there is always a shut gun bat in this kind of games";
     
 	}
+	if(i="Electric Guitar"){
+	
+	id=i;
+	l=false;
+	d=60;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="melee weapon"; 
+    durablity=40; 
+    detail="Lets Rock!!!!!!";
+    
+	}
+	if(i="dagger"){
+	
+	id=i;
+	l=false;
+	d=65;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="melee weapon"; 
+    durablity=70; 
+    detail="a handy dagger";
+    
+	}
+	if(i="Revolver"){
+	
+	id=i;
+	l=false;
+	d=90;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="2"; 
+    durablity=80; 
+    detail="draw your gun cowboy";
+    
+	}
+	if(i="Hidden blade"){
+	
+	id=i;
+	l=false;
+	d=60;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="melee weapon"; 
+    durablity=95; 
+    detail="like a shadow";
+    
+	}
+	if(i="MTs-108"){
+	
+	id=i;
+	l=false;
+	d=70;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="heavy weapon"; 
+    durablity=90; 
+    detail="be careful this gun is antique";
+    
+	}
 }
