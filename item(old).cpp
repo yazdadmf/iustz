@@ -309,4 +309,33 @@ if(i="pistol"){
     detail="be careful this gun is antique";
     
 	}
+	if(i="whip"){
+	
+	id=i;
+	l=false;
+	d=70;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="melee weapon"; 
+    durablity=110; 
+    detail="i wonder what was this thing doing under my brothers bed ";
+    
+	}
+	if(i="Wrench"){
+	
+	id=i;
+	l=false;
+	d=75;
+	du=1;
+	LongRange=l;
+	damage=d;
+	DurabilityUsage=du;
+	type="melee weapon"; 
+    durablity=110; 
+    detail="time to fix the pipes";
+    
+	}
+	
 }
