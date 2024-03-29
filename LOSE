@@ -1,0 +1,11 @@
+    bool lose(){
+        bool ret=true;
+        for(int i=0 ;i<group.size(); i++){
+            if(group[i].Health<=0){
+                cout<<group[i].name<<"died";
+
+            }
+            else{ret=false;}
+        }   
+        return ret;
+    }
