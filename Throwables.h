@@ -48,6 +48,27 @@ else if (ID == "rock") {
     effects = {};
     detail = "The original weapon of choice for Mother Nature, now in a throwable format. Guaranteed to rock your enemy's world! Can you smell what The Rock is cooking?";
 }
+else if(ID=="oxford dictionary"){
+
+instantDamage = 10;
+effects.push_back({4, "confusion"}); // Causes confusion for 4 turns
+detail = "A hefty tome filled with words, definitions, and occasionally, hidden surprises.";
+}
+else if(ID=="peel of banana"){
+detail = "A slippery peel from a banana, ready to cause chaos!";
+instantDamage = 0; 
+effects.push_back({4, "slip"});
+    }
+else if (ID == "shuriken") {
+    detail = "A sharp ninja star, perfect for swift and stealthy attacks!";
+    instantDamage = 20;
+    effects = {};
+}
+else if (ID == "smoke bomb") {
+    detail = "A smoke bomb that creates a cloud of confusion and obscures vision!";
+    instantDamage = 0; // Assuming smoke bomb doesn't cause direct damage
+    effects = {{3, "confusion"}};
+}
     }
     void displayInfo() {
         cout << "Throwables ID: " << id << endl;
