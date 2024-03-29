@@ -14,16 +14,34 @@ public:
 
     Meds() {}
     Meds(std::string ID) {
-        id = ID;
-        type = "Meds";
         if (ID == "stamina1") {
-            onUse = {20, "stamina"};
-            boosts = {};
-        }
-        if (ID == "healthi") {
-            onUse = {20, "health"};
-            boosts = {};
-        }
+    onUse = {20, "stamina"};
+    boosts = {};
+    detail = "A basic stamina-boosting medication that restores energy and vitality.";
+}
+if (ID == "health1" || ID == "weedweed") {
+    id = "health1";
+    onUse = {20, "health"};
+    boosts = {};
+    detail = "A common health potion that heals wounds and restores vitality.";
+}
+if (ID == "strenght1") {
+    onUse = {};
+    boosts = {{3,"strenght+"}};
+    detail = "A simple potion that enhances physical strength, making the user stronger in combat.";
+}
+if (ID == "knowledge") {
+    onUse = {};
+    boosts = {{3,"knowledge+"}};
+    detail = "A potion that enhances mental clarity and knowledge, improving cognitive abilities.";
+}
+if (ID == "health1stamina1" || ID == "lean") {
+    id = "lean";
+    onUse = {50, "stamina"};
+    boosts = {{10, "poisend1"}};
+    detail = "A combination medication that boosts stamina and provides resistance against poison.";
+}
+        
     }
 
     void displayInfo() {
