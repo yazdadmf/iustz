@@ -41,7 +41,39 @@ if (ID == "health1stamina1" || ID == "lean") {
     boosts = {{10, "poisend1"}};
     detail = "A combination medication that boosts stamina and provides resistance against poison.";
 }
-        
+ if (ID == "weed") {
+    onUse = {5, "health"};
+    boosts = {};
+    detail = "A medicinal herb known for its healing properties, providing a mild boost to health.";
+}
+if (ID == "health1health1" || ID == "health2") {
+    id = "health2";
+    onUse = {50, "health"};
+    boosts = {};
+    detail = "A potent health potion that restores a significant amount of health and vitality.";
+}
+if (ID == "stamina1stamina1" || ID == "stamina2") {
+    id = "stamina2";
+    onUse = {40, "stamina"};
+    boosts = {};
+    detail = "A powerful stamina-boosting medication that replenishes energy reserves and enhances endurance.";
+}
+if (ID == "strenght2" || ID == "strength1strength1") {
+    id = "strength2";
+    onUse = {};
+    boosts = {{3, "strength+"},{3, "strength+"},{3, "strength+"},{3, "strength+"}};
+    detail = "A potent potion that greatly enhances physical strength, allowing the user to perform extraordinary feats of power.";
+}
+if (ID == "energydrink") {
+    onUse = {30, "stamina"};
+    boosts = {{5, "strength+"}};
+    detail = "An energy drink that provides a quick boost of energy, enhancing strength and speed.";
+}
+if (ID == "adrenalineshot") {
+    onUse = {-20, "stamina"};
+    boosts = {{3, "strength+"},{3,"Aim+"},{3,"Aim+"}};
+    detail = "An adrenaline shot that increases adrenaline levels, boosting strength, agility, and awareness.";
+}       
     }
 
     void displayInfo() {
