@@ -1,0 +1,148 @@
+class Party{
+    public:
+    vector<Character> group;
+    vector<Item*> inventory;
+    Party(int god){
+        group.push_back(Character(1));
+        group.push_back(Character(2));
+        inventory.push_back(new Meds("health1"));
+        inventory.push_back(new Meds("health1"));
+        inventory.push_back(new Meds("stamina1"));
+        inventory.push_back(new Throwables("molotov"));
+         inventory.push_back(new Throwables("granade"));
+        
+    }
+    void addItemToInventory(Item* a){
+        inventory.push_back(a);
+         cout << "Added item to inventory: " << a->type << endl;
+        delete a;
+    }
+    // Function to add items from loot to the party inventory
+    void addLootToInventory(vector<Item*> loot) {
+        for (Item* item : loot) {
+          addItemToInventory(item);
+        
+      }
+      
+    }
+
+    void displaystatus(){
+        for(int i=0; i<group.size(); i++){
+            group[i].displayStatus();
+        }
+    }
+    bool lose(){
+        bool ret=true;
+        for(int i=0 ;i<group.size(); i++){
+            if(group[i].Health<=0){
+                cout<<group[i].name<<"died";
+
+            }
+            else{ret=false;}
+        }   
+        return ret;
+    }
+    
+   Item* craft(Item* item1, Item* item2) { 
+    // Check the type of one of the items (assuming both have the same type) 
+    string itemType = item1->type; 
+ 
+    // Combine IDs of item1 and item2 
+    string combinedId = item1->id + item2->id; 
+ 
+    // Vector to store the craftable IDs 
+    vector<string> craftableIds;   
+ 
+    // Check if the combined ID exists in the craftable IDs 
+    auto it = find(craftableIds.begin(), craftableIds.end(), combinedId);   
+    if (it != craftableIds.end()) {   
+        // Remove item1 and item2 from inventory and memory   
+        // Implement removal from inventory 
+ 
+        // Create a new item with the combined ID and type 
+        Item* craftedItem = nullptr; 
+        if (itemType == "Weapon") { 
+            Weapon* weapon = new Weapon(combinedId); 
+            craftedItem = weapon; 
+        } else if (itemType == "Armor") { 
+            Armor* armor = new Armor(combinedId); 
+            craftedItem = armor; 
+        } else if (itemType == "Meds") { 
+            Meds* meds = new Meds(combinedId); 
+            craftedItem = meds; 
+        } else if (itemType == "Throwables") { 
+            Throwables* throwables = new Throwables(combinedId); 
+            craftedItem = throwables; 
+        } 
+ 
+        // Add the crafted item to inventory 
+        // Implement addition to inventory 
+ 
+        cout << "Crafted item with ID: " << combinedId << " and type: " << itemType << endl;   
+ 
+        // Return the crafted item   
+        return craftedItem;   
+    } else {   
+        cout << "Crafting failed. No matching recipe found." << endl;   
+        return nullptr;   
+    }  }
+
+
+
+    Item* chooseusableitem() {
+    while (true) {
+        cout << "-------------------------------------------------------" << endl;
+        int row = 0;
+        for (int i = 0; i < inventory.size(); i++) {
+            if (inventory[i]->type == "Meds" || inventory[i]->type == "Throwables") {
+                cout << i + 1 << ". " << setw(18) << left << inventory[i]->id;
+                row++;
+                if (row % 4 == 0) {
+                    cout << endl;
+                }
+            }
+        }
+        cout << endl << "-------------------------------------------------------" << endl;
+
+        int choice;
+        cout << "Enter the number of the item you want to use (0 to cancel): ";
+        cin >> choice;
+
+        if (choice == 0) {
+            cout << "Operation canceled." << endl;
+            return nullptr; // Cancel operation
+        }
+
+        if (choice < 1 || choice > inventory.size()) {
+            cout << "Invalid choice. Please try again." << endl;
+            continue; // Restart the loop
+        }
+
+        // Adjust index to match vector indexing
+        int index = choice - 1;
+
+        cout << "You selected:" << endl;
+        cout << "Item ID: " << inventory[index]->id << endl;
+        cout << "Item Details: " << inventory[index]->detail << endl;
+
+        // Confirm the selection
+        char confirm;
+        cout << "Are you sure you want to use this item? (Y/N): ";
+        cin >> confirm;
+        if (confirm == 'Y' || confirm == 'y') {
+            auto selected = inventory[index];
+            inventory.erase(inventory.begin() + index);
+            return selected;
+        } else {
+            cout << "Operation canceled." << endl;
+            return nullptr; // Cancel operation
+        }
+    }
+}
+
+	void applyEffects(){
+		for(int i=0;i<group.size();i++){
+			group[i].applyEffects();
+		}
+	}
+};
