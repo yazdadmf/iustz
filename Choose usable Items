@@ -1,0 +1,50 @@
+    Item* chooseusableitem() {
+    while (true) {
+        cout << "-------------------------------------------------------" << endl;
+        int row = 0;
+        for (int i = 0; i < inventory.size(); i++) {
+            if (inventory[i]->type == "Meds" || inventory[i]->type == "Throwables") {
+                cout << i + 1 << ". " << setw(18) << left << inventory[i]->id;
+                row++;
+                if (row % 4 == 0) {
+                    cout << endl;
+                }
+            }
+        }
+        cout << endl << "-------------------------------------------------------" << endl;
+
+        int choice;
+        cout << "Enter the number of the item you want to use (0 to cancel): ";
+        cin >> choice;
+
+        if (choice == 0) {
+            cout << "Operation canceled." << endl;
+            return nullptr; // Cancel operation
+        }
+
+        if (choice < 1 || choice > inventory.size()) {
+            cout << "Invalid choice. Please try again." << endl;
+            continue; // Restart the loop
+        }
+
+        // Adjust index to match vector indexing
+        int index = choice - 1;
+
+        cout << "You selected:" << endl;
+        cout << "Item ID: " << inventory[index]->id << endl;
+        cout << "Item Details: " << inventory[index]->detail << endl;
+
+        // Confirm the selection
+        char confirm;
+        cout << "Are you sure you want to use this item? (Y/N): ";
+        cin >> confirm;
+        if (confirm == 'Y' || confirm == 'y') {
+            auto selected = inventory[index];
+            inventory.erase(inventory.begin() + index);
+            return selected;
+        } else {
+            cout << "Operation canceled." << endl;
+            return nullptr; // Cancel operation
+        }
+    }
+}
