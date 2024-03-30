@@ -1,0 +1,45 @@
+
+
+human::human(string id){
+if(tzname=="police officer"){
+    id=tzname;
+    damagee=40;
+    maxhealth=120;
+    health=120;
+    weakness="Electric guitar";
+    type="human";
+    description="A dedicated police officer patrolling the streets, upholding law and order with unwavering determination. Clad in a crisp uniform, this officer embodies bravery and commitment to serving and protecting the community.";
+    personality = "Disciplined, courageous, and vigilant.";
+}
+if(tzname=="handicap old man"){
+    id=tzname;
+    damagee=30;
+    maxhealth=100;
+    health=100;
+    weakness="Electric guitar";
+    type="human";
+    description="An elderly man, weathered by time and life's challenges, yet carrying a wealth of experience and wisdom. Despite physical limitations, his spirit remains unbroken, offering insights and guidance to those who cross his path.";
+    personality = "Resilient, compassionate, and wise.";
+}
+if(tzname=="vladimir putin"){
+    id=tzname;
+    damagee=45;
+    maxhealth=150;
+    health=150;
+    weakness="Electric guitar";
+    type="human";
+    description="Vladimir Putin, the enigmatic leader of Russia, known for his strong leadership and strategic prowess. He commands respect and fear in equal measure, navigating the complexities of international politics with a steely resolve.";
+    personality = "Authoritative, shrewd, and decisive.";
+}
+if(tzname=="kazem forghani"){
+    id=tzname;
+    damagee=55;
+    maxhealth=110;
+    health=110;
+    weakness="Electric guitar";
+    type="human";
+    description="Kazem Forghani, a renowned martial arts master, skilled in various forms of combat. With a lifetime of training, he embodies discipline and honor, seeking to pass on his knowledge to future generations.";
+    personality = "Focused, disciplined, and honorable.";
+}
+
+}
