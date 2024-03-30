@@ -41,5 +41,45 @@ if(tzname=="kazem forghani"){
     description="Kazem Forghani, a renowned martial arts master, skilled in various forms of combat. With a lifetime of training, he embodies discipline and honor, seeking to pass on his knowledge to future generations.";
     personality = "Focused, disciplined, and honorable.";
 }
+if(tzname=="Mr.X"){
+    id=tzname;
+    damagee=60;
+    maxhealth=140;
+    health=140;
+    weakness="Electric guitar";
+    type="human";
+    description="Mr. X, a mysterious figure lurking in the shadows, his true identity concealed behind a veil of secrecy. He operates with calculated precision, manipulating events from behind the scenes.";
+    personality = "Mysterious, cunning, and elusive.";
+}
+if(tzname=="Captain Price"){
+    id=tzname;
+    damagee=50;
+    maxhealth=130;
+    health=130;
+    weakness="Electric guitar";
+    type="human";
+    description="Captain Price, a battle-hardened soldier with years of combat experience. Leading by example, he inspires loyalty and camaraderie among his troops, facing danger head-on with unwavering courage.";
+    personality = "Fearless, decisive, and loyal.";
+}
+if(tzname=="elf Warrior"){
+    id=tzname;
+    damagee=65;
+    maxhealth=110;
+    health=110;
+    weakness="Electric guitar";
+    type="human";
+    description="An elven warrior, skilled in archery and swordsmanship, sworn to protect the mystical realms of the forest. With agility and grace, she defends her homeland against dark forces threatening its peace.";
+    personality = "Graceful, agile, and fiercely protective.";
+}
+if(tzname=="random shop keeper"){
+    id=tzname;
+    damagee=20;
+    maxhealth=80;
+    health=80;
+    weakness="Electric guitar";
+    type="human";
+    description="A humble shopkeeper, running a quaint store filled with treasures and trinkets from distant lands. With a warm smile, he welcomes travelers, eager to share stories of his adventures.";
+    personality = "Friendly, hospitable, and nostalgic.";
+}
 
 }
