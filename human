@@ -6,7 +6,7 @@ if(tzname=="police officer"){
     damagee=40;
     maxhealth=120;
     health=120;
-    weakness="Electric guitar";
+    weakness="MTs-108";
     type="human";
     description="A dedicated police officer patrolling the streets, upholding law and order with unwavering determination. Clad in a crisp uniform, this officer embodies bravery and commitment to serving and protecting the community.";
     personality = "Disciplined, courageous, and vigilant.";
@@ -16,7 +16,7 @@ if(tzname=="handicap old man"){
     damagee=30;
     maxhealth=100;
     health=100;
-    weakness="Electric guitar";
+    weakness="stapler";
     type="human";
     description="An elderly man, weathered by time and life's challenges, yet carrying a wealth of experience and wisdom. Despite physical limitations, his spirit remains unbroken, offering insights and guidance to those who cross his path.";
     personality = "Resilient, compassionate, and wise.";
@@ -26,7 +26,7 @@ if(tzname=="vladimir putin"){
     damagee=45;
     maxhealth=150;
     health=150;
-    weakness="Electric guitar";
+    weakness="cane";
     type="human";
     description="Vladimir Putin, the enigmatic leader of Russia, known for his strong leadership and strategic prowess. He commands respect and fear in equal measure, navigating the complexities of international politics with a steely resolve.";
     personality = "Authoritative, shrewd, and decisive.";
@@ -36,9 +36,9 @@ if(tzname=="kazem forghani"){
     damagee=55;
     maxhealth=110;
     health=110;
-    weakness="Electric guitar";
+    weakness="oxford dictionary";
     type="human";
-    description="Kazem Forghani, a renowned martial arts master, skilled in various forms of combat. With a lifetime of training, he embodies discipline and honor, seeking to pass on his knowledge to future generations.";
+    description="Kazem Forghani, The homework he gives you makes you want to commit suicide";
     personality = "Focused, disciplined, and honorable.";
 }
 if(tzname=="Mr.X"){
@@ -46,7 +46,7 @@ if(tzname=="Mr.X"){
     damagee=60;
     maxhealth=140;
     health=140;
-    weakness="Electric guitar";
+    weakness="grenade";
     type="human";
     description="Mr. X, a mysterious figure lurking in the shadows, his true identity concealed behind a veil of secrecy. He operates with calculated precision, manipulating events from behind the scenes.";
     personality = "Mysterious, cunning, and elusive.";
@@ -56,7 +56,7 @@ if(tzname=="Captain Price"){
     damagee=50;
     maxhealth=130;
     health=130;
-    weakness="Electric guitar";
+    weakness="snowbal";
     type="human";
     description="Captain Price, a battle-hardened soldier with years of combat experience. Leading by example, he inspires loyalty and camaraderie among his troops, facing danger head-on with unwavering courage.";
     personality = "Fearless, decisive, and loyal.";
@@ -66,7 +66,7 @@ if(tzname=="elf Warrior"){
     damagee=65;
     maxhealth=110;
     health=110;
-    weakness="Electric guitar";
+    weakness="batrang";
     type="human";
     description="An elven warrior, skilled in archery and swordsmanship, sworn to protect the mystical realms of the forest. With agility and grace, she defends her homeland against dark forces threatening its peace.";
     personality = "Graceful, agile, and fiercely protective.";
@@ -76,7 +76,7 @@ if(tzname=="random shop keeper"){
     damagee=20;
     maxhealth=80;
     health=80;
-    weakness="Electric guitar";
+    weakness="kitty";
     type="human";
     description="A humble shopkeeper, running a quaint store filled with treasures and trinkets from distant lands. With a warm smile, he welcomes travelers, eager to share stories of his adventures.";
     personality = "Friendly, hospitable, and nostalgic.";
@@ -86,7 +86,7 @@ if(tzname=="Homelander"){
     damagee=70;
     maxhealth=160;
     health=160;
-    weakness="Electric guitar";
+    weakness="smoke bomb";
     type="human";
     description="Homelander, a superhero with extraordinary powers, revered as a symbol of hope and justice. Concealing his dark secrets behind a facade of righteousness, he manipulates public opinion to serve his own agenda.";
     personality = "Charismatic, manipulative, and power-hungry.";
@@ -96,7 +96,7 @@ if(tzname=="Drunk teenager"){
     damagee=25;
     maxhealth=90;
     health=90;
-    weakness="Electric guitar";
+    weakness="slippers";
     type="human";
     description="A reckless teenager, stumbling through life with a carefree attitude and a penchant for mischief. With a penchant for trouble, he embarks on misadventures fueled by youthful exuberance.";
     personality = "Reckless, impulsive, and adventurous.";
@@ -106,7 +106,7 @@ if(tzname=="Mario"){
     damagee=45;
     maxhealth=120;
     health=120;
-    weakness="Electric guitar";
+    weakness="rock";
     type="human";
     description="Mario, a beloved plumber from the Mushroom Kingdom, known for his heroic deeds and unwavering determination to rescue Princess Peach from the clutches of Bowser. With his trusty sidekick, Luigi, he embarks on daring quests to save the day.";
     personality = "Courageous, heroic, and loyal.";
@@ -116,9 +116,40 @@ if(tzname=="Cursed Rapunzel"){
     damagee=35;
     maxhealth=100;
     health=100;
-    weakness="Electric guitar";
+    weakness="kitty";
     type="human";
     description="Rapunzel, cursed by an evil sorcerer to remain trapped in her tower, her luscious hair concealing dark secrets. Yearning for freedom, she awaits a hero brave enough to break the spell and set her free.";
     personality = "Lonely, resilient, and hopeful.";
 }
+if(tzname=="guardian of hell"){
+    id=tzname;
+    damagee=75;
+    maxhealth=180;
+    health=180;
+    weakness="snowbal";
+    type="human";
+    description="A fearsome guardian tasked with protecting the gates of hell, wielding infernal powers to thwart intruders seeking to disturb the realm of the damned. With an ominous presence, he strikes terror into the hearts of mortals.";
+    personality = "Malevolent, ruthless, and relentless.";
+}
+if(tzname=="banana man"){
+    id=tzname;
+    damagee=15;
+    maxhealth=70;
+    health=70;
+    weakness="peel of banana";
+    type="human";
+    description="Banana Man, a peculiar individual with a penchant for bananas and a bizarre sense of humor. With a banana for a weapon and a smile on his face, he brings chaos and laughter wherever he goes.";
+    personality = "Quirky, eccentric, and unpredictable.";
+}
+if(tzname=="spartan soldier"){
+    id=tzname;
+    damagee=60;
+    maxhealth=140;
+    health=140;
+    weakness="shuriken";
+    type="human";
+    description="A fierce Spartan warrior, trained from birth to be a formidable fighter on the battlefield. With unwavering loyalty to Sparta, he embodies the warrior ethos, ready to lay down his life for king and country.";
+    personality = "Disciplined, stoic, and fiercely loyal.";
+}
+
 }
