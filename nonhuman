@@ -1,0 +1,43 @@
+nonhuman::nonhuman(string id) {
+if(tzname=="spider"){
+    id=tzname;
+    damagee=20;
+    maxhealth=120;
+    health=120;
+    weakness="molotov";
+    type="nonhuman";
+    description="A nimble spider, weaving intricate webs with precision and agility. While not inherently malevolent, its presence can strike fear into the hearts of those with arachnophobia.";
+}
+
+if(tzname=="scooby doo"){
+    id=tzname;
+    damagee=20;
+    maxhealth=120;
+    health=120;
+    weakness="peel of banana";
+    type="nonhuman";
+    description="Scooby-Doo, the lovable Great Dane and member of the Mystery Inc. gang. Known for his insatiable appetite and penchant for solving mysteries, Scooby-Doo is a loyal companion and a friend to all.";
+}
+
+if(tzname=="Dragon"){
+    id=tzname;
+    damagee=20;
+    maxhealth=120;
+    health=120;
+    weakness="Mike Tyson Gloves";
+    type="nonhuman";
+    description="A majestic dragon, with scales as hard as steel and breath as hot as fire. Revered in myth and legend, the dragon commands awe and respect, guarding its hoard with fierce determination.";
+}
+
+if(tzname=="wild dog"){
+    id=tzname;
+    damagee=20;
+    maxhealth=120;
+    health=120;
+    weakness="pistol";
+    type="nonhuman";
+    description="A ferocious wild dog, roaming the untamed wilderness with primal instinct and aggression. Cunning and relentless, it hunts its prey with ruthless efficiency.";
+}
+
+
+}
