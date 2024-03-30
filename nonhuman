@@ -1,9 +1,9 @@
 nonhuman::nonhuman(string id) {
 if(tzname=="spider"){
     id=tzname;
-    damagee=20;
-    maxhealth=120;
-    health=120;
+    damagee=50;
+    maxhealth=100;
+    health=100;
     weakness="molotov";
     type="nonhuman";
     description="A nimble spider, weaving intricate webs with precision and agility. While not inherently malevolent, its presence can strike fear into the hearts of those with arachnophobia.";
@@ -11,7 +11,7 @@ if(tzname=="spider"){
 
 if(tzname=="scooby doo"){
     id=tzname;
-    damagee=20;
+    damagee=60;
     maxhealth=120;
     health=120;
     weakness="peel of banana";
@@ -21,9 +21,9 @@ if(tzname=="scooby doo"){
 
 if(tzname=="Dragon"){
     id=tzname;
-    damagee=20;
-    maxhealth=120;
-    health=120;
+    damagee=80;
+    maxhealth=80;
+    health=160;
     weakness="Mike Tyson Gloves";
     type="nonhuman";
     description="A majestic dragon, with scales as hard as steel and breath as hot as fire. Revered in myth and legend, the dragon commands awe and respect, guarding its hoard with fierce determination.";
@@ -31,13 +31,51 @@ if(tzname=="Dragon"){
 
 if(tzname=="wild dog"){
     id=tzname;
-    damagee=20;
+    damagee=40;
     maxhealth=120;
     health=120;
     weakness="pistol";
     type="nonhuman";
     description="A ferocious wild dog, roaming the untamed wilderness with primal instinct and aggression. Cunning and relentless, it hunts its prey with ruthless efficiency.";
 }
+if(tzname=="looloo"){
+    id=tzname;
+    damagee=50;
+    maxhealth=110;
+    health=110;
+    weakness="Wrench";
+    type="nonhuman";
+    description="Looloo, a mischievous forest sprite, known for playing pranks on unsuspecting travelers. With a twinkle in its eye and a giggle on its lips, Looloo delights in causing mischief and mayhem.";
+}
 
+if(tzname=="giant rat"){
+    id=tzname;
+    damagee=30;
+    maxhealth=100;
+    health=100;
+    weakness="bow";
+    type="nonhuman";
+    description="A giant rat, scurrying through darkened alleyways and abandoned tunnels. Feeding on scraps and vermin, it lurks in the shadows, a harbinger of disease and decay.";
+}
+
+if(tzname=="home work"){
+    id=tzname;
+    damagee=50;
+    maxhealth=100;
+    health=100;
+    weakness="molotov";
+    type="nonhuman";
+    description="Home Work, a formidable creature born from unfinished assignments and neglected responsibilities. With a relentless appetite for procrastination, it haunts the dreams of students and scholars alike.";
+}
+
+if(tzname=="demon khale shadooneh"){
+    id=tzname;
+    damagee=50;
+    maxhealth=80;
+    health=80;
+    weakness="whip";
+    type="nonhuman";
+    description="Demon Khale Shadooneh, a malevolent entity from the depths of the underworld. With eyes ablaze with infernal fire and claws sharp as daggers, it spreads terror and chaos wherever it goes.";
+}
 
 }
