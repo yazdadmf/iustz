@@ -216,6 +216,73 @@ void selectItemAction(const std::string& choice, int currentPage, int itemsPerPa
         displayItemOptions(selectedItem);
     }
 }
+void displayItemOptions(Item* selectedItem) {
+    std::cout << "Item Info: " << selectedItem->detail << std::endl;
+    std::cout << "1. Appraise" << std::endl;
+    std::cout << "2. Use Item" << std::endl;
+    std::cout << "3. Craft" << std::endl;
+    std::cout << "4. Discard Item" << std::endl;
+    std::cout << "5. Go Back" << std::endl;
+    std::cout << "Enter your choice: ";
 
+    int option;
+    std::cin >> option;
+
+    switch (option) {
+        case 1: {
+            // Appraise item
+            if (selectedItem->type == "weapon") {
+                Weapon* weaponItem = dynamic_cast<Weapon*>(selectedItem);
+                if (weaponItem != nullptr) {
+                    weaponItem->displayInfo();
+                }
+            } else if (selectedItem->type == "armor") {
+                Armor* armorItem = dynamic_cast<Armor*>(selectedItem);
+                if (armorItem != nullptr) {
+                    armorItem->displayInfo();
+                }
+            } else if (selectedItem->type == "Meds") {
+                Meds* medsItem = dynamic_cast<Meds*>(selectedItem);
+                if (medsItem != nullptr) {
+                    medsItem->displayInfo();
+                }
+            } else if (selectedItem->type == "Throwables") {
+                Throwables* throwablesItem = dynamic_cast<Throwables*>(selectedItem);
+                if (throwablesItem != nullptr) {
+                    throwablesItem->displayInfo();
+                }
+            } else {
+                std::cout << "Unknown item type." << std::endl;
+            }
+            break;
+        }
+            break;
+        case 2:
+            // Use item
+            if (selectedItem->type == "Throwables") {
+                std::cout << "Cannot use throwables outside of combat." << std::endl;
+            } else {
+                useSelectedItem(selectedItem);
+            }
+            break;
+        case 3:
+            // Craft option
+            displayCraftingOptions(selectedItem,0,9);
+            break;
+        case 4:{
+		
+	
+        	 auto it = std::find(inventory.begin(), inventory.end(), selectedItem);
+    if (it != inventory.end()) {
+        inventory.erase(it);
+        std::cout << "Item discarded." << std::endl;
+    }
+			break;}
+		case 5:
+			break;    
+        
+        // Add cases for other options if needed
+    }
+}
 
 };
