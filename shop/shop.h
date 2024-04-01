@@ -83,7 +83,23 @@ void Shop::sellItem(Party& party, int itemIndex) {
     }
 
 
+  void Shop::buyItem(Party& party, int itemIndex) {
+    if (itemIndex >= 0 && itemIndex < inventory.size()) {
+        Item* itemToBuy = inventory[itemIndex];
+        if (party.wallet < itemToBuy->price) {
+            cout << "Not enough money to buy " << itemToBuy->id << endl;
+            return;
+        }
+        party.wallet -= itemToBuy->price;
+        party.addItemToInventory(itemToBuy);
+        inventory.erase(inventory.begin() + itemIndex);
+        cout << "Bought " << itemToBuy->id << " for " << itemToBuy->price << " coins." << endl;
+    } else {
+        cout << "Invalid item index." << endl;
+    }
 
+
+}
 
 
 
