@@ -145,4 +145,32 @@ class Party{
 			group[i].applyEffects();
 		}
 	}
+void scrollInventory() {
+    const int itemsPerPage = 9; // 3x3 table = 9 items per page
+    int currentPage = 0;
+
+    while (true) {
+        // Display inventory page
+        displayInventoryPage(currentPage, itemsPerPage);
+
+        // Display page navigation options
+        displayNavigationOptions();
+
+        // Get user input for page navigation or item selection
+        std::string choice;
+        std::cout << "Enter your choice: ";
+        std::cin >> choice;
+
+        // Process user choice
+        if (choice == "P" || choice == "p") {
+            navigatePreviousPage(currentPage);
+        } else if (choice == "N" || choice == "n") {
+            navigateNextPage(currentPage, itemsPerPage);
+        } else if (choice == "Q" || choice == "q") {
+            break; // Quit
+        } else {
+            selectItemAction(choice, currentPage, itemsPerPage);
+        }
+    }
+}
 };
