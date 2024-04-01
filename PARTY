@@ -206,5 +206,16 @@ void navigateNextPage(int& currentPage, int itemsPerPage) {
         ++currentPage;
     }
 }
+void selectItemAction(const std::string& choice, int currentPage, int itemsPerPage) {
+    int itemIndex = std::stoi(choice) - 1;
+    int startIndex = currentPage * itemsPerPage;
+    int endIndex = std::min(startIndex + itemsPerPage, static_cast<int>(inventory.size()));
+
+    if (itemIndex >= startIndex && itemIndex < endIndex) {
+        Item* selectedItem = inventory[itemIndex];
+        displayItemOptions(selectedItem);
+    }
+}
+
 
 };
