@@ -68,6 +68,27 @@ void scrollThroughBuyInventory(Party& party)
 };
 
 
+
+void Shop::sellItem(Party& party, int itemIndex) {
+        if (itemIndex >= 0 && itemIndex < party.inventory.size()) {
+            Item* item = party.inventory[itemIndex];
+            // Add item to shop inventory
+            inventory.push_back(item);
+            party.inventory.erase(party.inventory.begin() + itemIndex);
+            party.increaseWallet(item->price); // Implement increaseWallet function in Party class
+            cout << "You sold: " << item->id << endl;
+        } else {
+            cout << "Invalid item index." << endl;
+        }
+    }
+
+
+
+
+
+
+
+
 #endif 
 
-}
+
