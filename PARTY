@@ -173,4 +173,19 @@ void scrollInventory() {
         }
     }
 }
+void displayInventoryPage(int currentPage, int itemsPerPage) {
+    std::cout << "Inventory Page " << currentPage + 1 << std::endl;
+    std::cout << "-----------------------------------" << std::endl;
+
+    int startIndex = currentPage * itemsPerPage;
+    int endIndex = std::min(startIndex + itemsPerPage, static_cast<int>(inventory.size()));
+
+    // Print items in a 3x3 table
+    for (int i = startIndex; i < endIndex; i += 3) {
+        for (int j = 0; j < 3 && i + j < endIndex; ++j) {
+            std::cout << "[" << i + j + 1 << "] " << inventory[i + j]->id << " (" << inventory[i + j]->type << ")\t";
+        }
+        std::cout << std::endl;
+    }
+}
 };
