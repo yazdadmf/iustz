@@ -1,5 +1,6 @@
 class Party{
     public:
+    int wallet=10;
     vector<Character> group;
     vector<Item*> inventory;
     Party(int god){
@@ -25,6 +26,34 @@ class Party{
       }
       
     }
+
+     void manageParty() {
+    while (true) {
+        cout << "Manage Party:" << endl;
+        cout << "1. Scroll Through Inventory" << endl;
+        cout << "2. View Character Status" << endl;
+        cout << "3. Exit" << endl;
+        cout << "Enter your choice: ";
+
+        int choice;
+        cin >> choice;
+
+        switch (choice) {
+            case 1:
+                scrollInventory();
+                break;
+            case 2:
+                displayCharacterInfo();
+                break;
+            case 3:
+                return; // Exit the function
+            default:
+                cout << "Invalid choice. Please try again." << endl;
+                break;
+        }
+    }
+}
+
 
     void displaystatus(){
         for(int i=0; i<group.size(); i++){
