@@ -284,5 +284,38 @@ void displayItemOptions(Item* selectedItem) {
         // Add cases for other options if needed
     }
 }
+void displayCraftingOptions(Item* selectedItem, int currentPage, int itemsPerPage) {
+    std::cout << "Select another item to craft with " << selectedItem->id << ":" << std::endl;
+
+    // Display inventory again with crossed out previously selected item
+    displayInventoryPageWithCrossedOut(selectedItem, currentPage, itemsPerPage);
+
+    // Display page navigation options
+    displayNavigationOptions();
+
+    std::string input;
+    std::cout << "Enter the index of the second item or 'Q' to cancel: ";
+    std::cin >> input;
+
+    if (input == "Q" || input == "q") {
+        std::cout << "Crafting canceled." << std::endl;
+        // Handle cancellation
+    } else {
+        int secondItemIndex = std::stoi(input) - 1;
+        int startIndex = currentPage * itemsPerPage;
+        int endIndex = std::min(startIndex + itemsPerPage, static_cast<int>(inventory.size()));
+
+        if (secondItemIndex >= startIndex && secondItemIndex < endIndex) {
+            Item* secondItem = inventory[secondItemIndex];
+
+            // Now you have both selected items (selectedItem and secondItem)
+            // Perform crafting operations here
+
+          inventory.push_back(craft(secondItem,selectedItem));
+        } else {
+           
+        }
+    }
+}
 
 };
