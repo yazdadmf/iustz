@@ -188,4 +188,23 @@ void displayInventoryPage(int currentPage, int itemsPerPage) {
         std::cout << std::endl;
     }
 }
+void displayNavigationOptions() {
+    std::cout << "-----------------------------------" << std::endl;
+    std::cout << "Page Navigation: [P]revious | [N]ext | [Q]uit" << std::endl;
+}
+
+void navigatePreviousPage(int& currentPage) {
+    if (currentPage > 0) {
+        --currentPage;
+    }
+}
+
+void navigateNextPage(int& currentPage, int itemsPerPage) {
+    int startIndex = currentPage * itemsPerPage;
+    int endIndex = std::min(startIndex + itemsPerPage, static_cast<int>(inventory.size()));
+    if (endIndex < static_cast<int>(inventory.size())) {
+        ++currentPage;
+    }
+}
+
 };
