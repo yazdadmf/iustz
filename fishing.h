@@ -52,6 +52,37 @@ public:
             std::cout << "Exiting Fishing Minigame...\n";
         }
     }
-        
+     private:
+    int fishCount;
+
+    // Wait for the user to press Enter to continue
+    void waitForEnter() {
+        while (true) {
+            if (_kbhit()) {
+                if (_getch() == 13) // 13 is the Enter key
+                    break;
+            }
+        }
+    }
+
+    // Simulate casting the fishing line with cool visual effects
+    void simulateCasting() {
+        std::string castingLine = "|";
+        std::cout << castingLine;
+
+        for (int i = 0; i < 20; ++i) {
+            std::this_thread::sleep_for(std::chrono::milliseconds(100)); // Pause for visual effect
+            std::cout << "\b/"; // Move cursor back and overwrite previous character
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            std::cout << "\b-";
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            std::cout << "\b\\"; // Move cursor back and overwrite previous character
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            std::cout << "\b|";
+        }
+
+        std::cout << "\n"; // Move to the next line
+    }
+
 };
 #endif // FISHING_MINIGAME_H
