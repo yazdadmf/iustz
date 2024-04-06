@@ -23,7 +23,15 @@ public:
         // Prompt user to reel in the fishing line
         std::cout << "Press Spacebar repeatedly to reel in the fishing line...\n";
         int reelCount = waitForReel(); // Wait for user to reel in the line
-
+// Check if the player caught a fish based on reeling effort
+        if (reelCount > 20) {
+            // Player caught a fish
+            fishCount++;
+            std::cout << "You caught a fish!\n";
+        } else {
+            // Player didn't catch a fish
+            std::cout << "You didn't catch anything...\n";
+        }
         
 };
 #endif // FISHING_MINIGAME_H
