@@ -8,131 +8,133 @@ if(tzname=="zombie"){
             type="zombie";
             discription="Risen from the grave to kick your ass";
         }
+       if(tzname=="zombie."){
+            id=tzname;
+            damagee=10;
+            maxhealth=100;
+            health=100;
+            weakness="";
+            type="zombie";
+            discription="Risen from the grave to kick your ass";
+        }
         if(tzname=="fast zombie"){
             id=tzname;
             damagee=30;
             maxhealth=100;
             health=100;
-            weakness="Katana";
+            weakness="lower";
             type="zombie";
-            discription="The good thing about zombies is that they move slowly, but this one is almost as fast as me ";
+            discription=" This dude's like greased lightning, muscles bulging and legs moving faster than a cat on a hot tin roof.";
+            hint= "Yeah, they're quick, but you know what they ain't quick at dodging? Low blows. Give 'em a good kick where the sun don't shine, and they'll be limping like a wounded puppy!";
+            attackeffects={{2,"confusion"}};
         }
         if(tzname=="smart zombie"){
             id=tzname;
             damagee=25;
             maxhealth=100;
             health=100;
-            weakness="shocker";
+            weakness="head";
             type="zombie";
-            discription="This one's brain seems to work better than the others he can make weaapons and use them, a strong shock will do the trick"
-            specialattack;
+            discription="Picture this zombie like the undead Einstein, all serious-looking with a side of 'I've got a plan'.";
+            hint= "These brainy ones might think they've got it all figured out, but a solid smack to the noggin? Lights out, pal! Keep a bat handy for these smarty-pants.";
+            attackeffects={{4,"slip"}};
 		}
         if(tzname=="screamer zombie"){
             id=tzname;
             damagee=30;
             maxhealth=100;
             health=100;
-            weakness="frying pan";
+            weakness="";
             type="zombie";
-            discription="With her scream, she can make you unable to hear anything for hours, and the headache you get makes it harder for you to continue.";
-            specialattack;
+            discription="You can't miss this one. Always yelling like it's got a permanent case of the Mondays. Eyes wide, mouth open, and veins popping out like it's auditioning for a horror movie.";
+            hint="That screamer? Yeah, keep your ears covered, or you'll be ringing like a church bell on Sunday! Just knock 'em out quick, and let's move on.";
+            attackeffects={{3,"stun"}};
 		}
         if(tzname=="body builder zombie"){
             id=tzname;
             damagee=50;
             maxhealth=140;
             health=140;
-            weakness="shotgun";
+            weakness="";
             type="zombie";
+            hint="we're cooked.";
             discription="Look at that body, it's a pity that she is dead now";
         }
-if(tzname=="explosive zombie"){
+        if(tzname=="explosive zombie"){
             id=tzname;
             damagee=40;
             maxhealth=110;
             health=110;
-            weakness="Molotov";
+            weakness="fire";
             type="zombie";
+            hint="boombs and fire arent the best of friends now are they";
             discription="you have to be careful aroud this ones if he gets so close to you he says <<allahoo akbarrrr   boom>>";
-            specialattack;
+            attackeffects={{1,"boom"}};
         }
         if(tzname=="A zombie who didn't eat breakfast"){
             id=tzname;
             damagee=40;
             maxhealth=110;
             health=110;
-            weakness="air freshner";
+            weakness="a";
             type="zombie";
-            discription="This zombie has not eaten breakfast and her mouth smells like a dead dog, her breath is poisonous, be careful not to be too close to her";
-            specialattack;
+            hint="This zombie has not eaten breakfast and her mouth smells like a dead dog, her breath is poisonous, be careful not to be too close to her";
+           discription=" Looks like it skipped breakfast, lunch, and dinner for a decade. Pale, skinny, and with breath that could wilt flowers at twenty paces.";
         }
         if(tzname=="dancer zombie"){
             id=tzname;
             damagee=20;
             maxhealth=120;
             health=120;
-            weakness="Electric guitar";
+            weakness="lower";
             type="zombie";
             discription="he is such a good dancer be i bet he would love some Electric guitar";
+            hint="he sure has fast feet doesnt it would be a shame if someone shot them.";
+            attackeffects={{5,"Aim-"},{5,"Aim-"},{5,"Aim-"},{5,"Aim-"}};
             
         }
-        if(tzname=="leader zombie"){
-            id=tzname;
-            damagee=10;
-            maxhealth=100;
-            health=100;
-            weakness="machinegun";
-            type="zombie";
-            discription="This one can summon two zombies from the grave to hit you for one turn ";
-            specialattack;
-		}
-		if(tzname=="Conjoined twins"){
+     if(tzname=="Conjoined twins"){
             id=tzname;
             damagee=20;
             maxhealth=110;
             health=110;
-            weakness="Axe";
+            weakness="";
             type="zombie";
-            discription="They are unlucky from the beginning, be aware that they have three hands and with the third hand they can give you a confusing uppercut, Separate them with your ax ";
-            specialattack;
+            discription="the fuck is that ?";
+            hint="idk ?!!?!?!!";
+      
 		}
-if(tzname=="Nigger zombie"){
+		
+        if(tzname=="Nigger zombie"){
             id=tzname;
             damagee=40;
             maxhealth=130;
             health=130;
-            weakness="Whip";
+            weakness="";
             type="zombie";
             discription="Because of working in the cotton fields, he has a strong physique and always carries his sickle with her, be careful not to throw it at you.";
-            specialattack;
-		}
-		if(tzname=="Cyborg zombie"){
-            id=tzname;
-            damagee=60;
-            maxhealth=160;
-            health=160;
-            weakness="watergun";
-            type="zombie";
-            discription="He died while testing his new abilities and turned into a zombie. Watch out for the rockets on his back";
-            specialattack;
+            hint="whip that son of a bitch.";
+           
 		}
 		if(tzname=="zombie succubus"){
             id=tzname;
             damagee=30;
             maxhealth=130;
             health=130;
-            weakness="witcher steel sword";
+            weakness="freeze";
             type="zombie";
             discription="if you get deceived by this beautiful creature, you will be confused for several turns";
+            hint="";
         }
 		if(tzname=="bin Laden zombie"){
             id=tzname;
             damagee=30;
             maxhealth=100;
             health=100;
-            weakness="Rocket launcher";
+            weakness="";
             type="zombie";
-            discription="The killer of the twins wants to kill you now. The plane will fall towards you whenever he wants";
+            discription="The killer of the twins wants to kill yus now";
+            hint="doenst seem that strong.";
         }
         if(tzname=="zombie "+name){
             id=tzname;
@@ -142,17 +144,18 @@ if(tzname=="Nigger zombie"){
             weakness;
             type="zombie";
             discription="Face your self";
-            specialattack;
+            hint="";
+          
         }
         if(tzname=="Zombie batman"){
             id=tzname;
             damagee=100;
             maxhealth=300;
             health=300;
-            weakness="lucille";
+            weakness="";
             type="zombie";
             discription="a tortured, brooding vigilante dressed as a bat who fights against evil and strikes fear into the hearts of criminals everywhere,never meet your heroes";
-            specialattack;
+            hint="";
 		}
         
 
