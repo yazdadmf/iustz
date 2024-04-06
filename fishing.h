@@ -83,6 +83,42 @@ public:
 
         std::cout << "\n"; // Move to the next line
     }
+// Wait for the user to reel in the fishing line by pressing Spacebar
+    int waitForReel() {
+        int reelCount = 0;
+        HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
+        // Define colors for visual feedback
+        const int GREEN = 10;
+        const int RED = 12;
+        const int YELLOW = 14;
+
+        while (reelCount < 50) { // Maximum 50 reel attempts allowed
+            if (_kbhit()) {
+                if (_getch() == 32) { // 32 is the Spacebar key
+                    SetConsoleTextAttribute(hConsole, GREEN); // Set text color to green
+                    std::cout << "*"; // Show visual feedback for reeling in
+                    SetConsoleTextAttribute(hConsole, 15); // Set text color back to white
+                    reelCount++;
+                }
+            }
+            std::this_thread::sleep_for(std::chrono::milliseconds(100)); // Pause for visual effect
+        }
+
+        // Additional visual effect after reeling is done
+        for (int i = 0; i < 5; ++i) {
+            SetConsoleTextAttribute(hConsole, RED); // Set text color to red
+            std::cout << "!"; // Show visual effect
+            std::this_thread::sleep_for(std::chrono::milliseconds(200)); // Pause for visual effect
+            SetConsoleTextAttribute(hConsole, YELLOW); // Set text color to yellow
+            std::cout << "!"; // Show visual effect
+            std::this_thread::sleep_for(std::chrono::milliseconds(200)); // Pause for visual effect
+            SetConsoleTextAttribute(hConsole, 15); // Set text color back to white
+        }
+
+        SetConsoleTextAttribute(hConsole, 15); // Set text color back to white
+        std::cout << "\n"; // Move to the next line after reeling is done
+        return reelCount;
+    }
 };
 #endif // FISHING_MINIGAME_H
