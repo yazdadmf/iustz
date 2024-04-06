@@ -32,6 +32,26 @@ public:
             // Player didn't catch a fish
             std::cout << "You didn't catch anything...\n";
         }
+        / Display fish count
+        std::cout << "Total Fish Caught: " << fishCount << "\n";
+
+        // Introduce a random event (e.g., sudden heavy rain)
+        if (rand() % 5 == 0) {
+            std::cout << "Uh oh! Sudden heavy rain makes fishing more challenging!\n";
+            std::this_thread::sleep_for(std::chrono::seconds(2)); // Simulate delay
+        }
+
+        // Ask if player wants to continue fishing
+        char choice;
+        std::cout << "Do you want to continue fishing? (Y/N): ";
+        std::cin >> choice;
+
+        if (choice == 'Y' || choice == 'y') {
+            play(); // Recursive call to continue fishing
+        } else {
+            std::cout << "Exiting Fishing Minigame...\n";
+        }
+    }
         
 };
 #endif // FISHING_MINIGAME_H
