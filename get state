@@ -1,3 +1,0 @@
-    	int getstate (){
-    		return (rand() % 2 +1) * HP/maxHP;
-		}
