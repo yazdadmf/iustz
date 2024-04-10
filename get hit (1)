@@ -1,0 +1,6 @@
+	    void gethit1(Throwables* thrown,Human_enemy& zombie){
+	        zombie.gethit(thrown->instantDamage,2);
+	        vector<pair<int,string>>effectsh=thrown->effects;
+	        zombie.addeffects(effectsh);
+	        delete thrown;
+		} 
