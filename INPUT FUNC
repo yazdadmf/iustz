@@ -1,0 +1,22 @@
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <iostream>
+
+string input(vector<string> choices) {
+    string ans;
+
+    do {
+        cout << "Enter your choice: ";
+        cin >> ans;
+
+        for (const string& choice : choices) {
+            if (choice == ans) {
+                return ans;
+            }
+        }
+
+        cout << "Invalid input. Please try again." << endl;
+
+    } while (true);
+}

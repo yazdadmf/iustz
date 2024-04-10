@@ -1,0 +1,25 @@
+int main(){
+ // Set console output to UTF-8 encoding
+    SetConsoleOutputCP(CP_UTF8);
+
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    CONSOLE_FONT_INFOEX fontInfo;
+    fontInfo.cbSize = sizeof(fontInfo);
+    GetCurrentConsoleFontEx(hConsole, FALSE, &fontInfo);
+
+    // Specify the font name
+    wcscpy(fontInfo.FaceName, L"Segoepr");
+
+    // Set the font size
+    fontInfo.dwFontSize.X = 12;
+    fontInfo.dwFontSize.Y = 16; // Font size in pixels
+
+    // Set the console font
+    SetCurrentConsoleFontEx(hConsole, FALSE, &fontInfo);
+    cout<<"kir";
+    Party party(1);
+    Zombie zombie("zombie1");
+    encounter(party,zombie);
+    int ran=rand()%5;
+    party.addLootToInventory(generateRandomLoot(ran,ran,ran,ran));
+}

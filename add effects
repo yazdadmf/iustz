@@ -1,0 +1,3 @@
+void addeffects(vector<pair<int,string>> neew){
+    effects.insert(effects.end(),neew.begin(),neew.end());
+}

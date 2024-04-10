@@ -1,0 +1,371 @@
+class Party{
+    public:
+    int wallet=10;
+    vector<Character> group;
+    vector<Item*> inventory;
+    Party(int god){
+        group.push_back(Character(1));
+        group.push_back(Character(2));
+        inventory.push_back(new Meds("health1"));
+        inventory.push_back(new Meds("health1"));
+        inventory.push_back(new Meds("stamina1"));
+        inventory.push_back(new Throwables("molotov"));
+         inventory.push_back(new Throwables("granade"));
+        
+    }
+    void addItemToInventory(Item* a){
+        inventory.push_back(a);
+         cout << "Added item to inventory: " << a->type << endl;
+        delete a;
+    }
+    // Function to add items from loot to the party inventory
+    void addLootToInventory(vector<Item*> loot) {
+        for (Item* item : loot) {
+          addItemToInventory(item);
+        
+      }
+      
+    }
+
+     void manageParty() {
+    while (true) {
+        cout << "Manage Party:" << endl;
+        cout << "1. Scroll Through Inventory" << endl;
+        cout << "2. View Character Status" << endl;
+        cout << "3. Exit" << endl;
+        cout << "Enter your choice: ";
+
+        int choice;
+        cin >> choice;
+
+        switch (choice) {
+            case 1:
+                scrollInventory();
+                break;
+            case 2:
+                displayCharacterInfo();
+                break;
+            case 3:
+                return; // Exit the function
+            default:
+                cout << "Invalid choice. Please try again." << endl;
+                break;
+        }
+    }
+}
+
+
+    void displaystatus(){
+        for(int i=0; i<group.size(); i++){
+            group[i].displayStatus();
+        }
+    }
+    bool lose(){
+        bool ret=true;
+        for(int i=0 ;i<group.size(); i++){
+            if(group[i].Health<=0){
+                cout<<group[i].name<<"died";
+
+            }
+            else{ret=false;}
+        }   
+        return ret;
+    }
+    
+   Item* craft(Item* item1, Item* item2) { 
+    // Check the type of one of the items (assuming both have the same type) 
+    string itemType = item1->type; 
+ 
+    // Combine IDs of item1 and item2 
+    string combinedId = item1->id + item2->id; 
+ 
+    // Vector to store the craftable IDs 
+    vector<string> craftableIds;   
+ 
+    // Check if the combined ID exists in the craftable IDs 
+    auto it = find(craftableIds.begin(), craftableIds.end(), combinedId);   
+    if (it != craftableIds.end()) {   
+        // Remove item1 and item2 from inventory and memory   
+        // Implement removal from inventory 
+ 
+        // Create a new item with the combined ID and type 
+        Item* craftedItem = nullptr; 
+        if (itemType == "Weapon") { 
+            Weapon* weapon = new Weapon(combinedId); 
+            craftedItem = weapon; 
+        } else if (itemType == "Armor") { 
+            Armor* armor = new Armor(combinedId); 
+            craftedItem = armor; 
+        } else if (itemType == "Meds") { 
+            Meds* meds = new Meds(combinedId); 
+            craftedItem = meds; 
+        } else if (itemType == "Throwables") { 
+            Throwables* throwables = new Throwables(combinedId); 
+            craftedItem = throwables; 
+        } 
+ 
+        // Add the crafted item to inventory 
+        // Implement addition to inventory 
+ 
+        cout << "Crafted item with ID: " << combinedId << " and type: " << itemType << endl;   
+ 
+        // Return the crafted item   
+        return craftedItem;   
+    } else {   
+        cout << "Crafting failed. No matching recipe found." << endl;   
+        return nullptr;   
+    }  }
+
+
+
+    Item* chooseusableitem() {
+    while (true) {
+        cout << "-------------------------------------------------------" << endl;
+        int row = 0;
+        for (int i = 0; i < inventory.size(); i++) {
+            if (inventory[i]->type == "Meds" || inventory[i]->type == "Throwables") {
+                cout << i + 1 << ". " << setw(18) << left << inventory[i]->id;
+                row++;
+                if (row % 4 == 0) {
+                    cout << endl;
+                }
+            }
+        }
+        cout << endl << "-------------------------------------------------------" << endl;
+
+        int choice;
+        cout << "Enter the number of the item you want to use (0 to cancel): ";
+        cin >> choice;
+
+        if (choice == 0) {
+            cout << "Operation canceled." << endl;
+            return nullptr; // Cancel operation
+        }
+
+        if (choice < 1 || choice > inventory.size()) {
+            cout << "Invalid choice. Please try again." << endl;
+            continue; // Restart the loop
+        }
+
+        // Adjust index to match vector indexing
+        int index = choice - 1;
+
+        cout << "You selected:" << endl;
+        cout << "Item ID: " << inventory[index]->id << endl;
+        cout << "Item Details: " << inventory[index]->detail << endl;
+
+        // Confirm the selection
+        char confirm;
+        cout << "Are you sure you want to use this item? (Y/N): ";
+        cin >> confirm;
+        if (confirm == 'Y' || confirm == 'y') {
+            auto selected = inventory[index];
+            inventory.erase(inventory.begin() + index);
+            return selected;
+        } else {
+            cout << "Operation canceled." << endl;
+            return nullptr; // Cancel operation
+        }
+    }
+}
+
+	void applyEffects(){
+		for(int i=0;i<group.size();i++){
+			group[i].applyEffects();
+		}
+	}
+void scrollInventory() {
+    const int itemsPerPage = 9; // 3x3 table = 9 items per page
+    int currentPage = 0;
+
+    while (true) {
+        // Display inventory page
+        displayInventoryPage(currentPage, itemsPerPage);
+
+        // Display page navigation options
+        displayNavigationOptions();
+
+        // Get user input for page navigation or item selection
+        std::string choice;
+        std::cout << "Enter your choice: ";
+        std::cin >> choice;
+
+        // Process user choice
+        if (choice == "P" || choice == "p") {
+            navigatePreviousPage(currentPage);
+        } else if (choice == "N" || choice == "n") {
+            navigateNextPage(currentPage, itemsPerPage);
+        } else if (choice == "Q" || choice == "q") {
+            break; // Quit
+        } else {
+            selectItemAction(choice, currentPage, itemsPerPage);
+        }
+    }
+}
+void displayInventoryPage(int currentPage, int itemsPerPage) {
+    std::cout << "Inventory Page " << currentPage + 1 << std::endl;
+    std::cout << "-----------------------------------" << std::endl;
+
+    int startIndex = currentPage * itemsPerPage;
+    int endIndex = std::min(startIndex + itemsPerPage, static_cast<int>(inventory.size()));
+
+    // Print items in a 3x3 table
+    for (int i = startIndex; i < endIndex; i += 3) {
+        for (int j = 0; j < 3 && i + j < endIndex; ++j) {
+            std::cout << "[" << i + j + 1 << "] " << inventory[i + j]->id << " (" << inventory[i + j]->type << ")\t";
+        }
+        std::cout << std::endl;
+    }
+}
+void displayNavigationOptions() {
+    std::cout << "-----------------------------------" << std::endl;
+    std::cout << "Page Navigation: [P]revious | [N]ext | [Q]uit" << std::endl;
+}
+
+void navigatePreviousPage(int& currentPage) {
+    if (currentPage > 0) {
+        --currentPage;
+    }
+}
+
+void navigateNextPage(int& currentPage, int itemsPerPage) {
+    int startIndex = currentPage * itemsPerPage;
+    int endIndex = std::min(startIndex + itemsPerPage, static_cast<int>(inventory.size()));
+    if (endIndex < static_cast<int>(inventory.size())) {
+        ++currentPage;
+    }
+}
+void selectItemAction(const std::string& choice, int currentPage, int itemsPerPage) {
+    int itemIndex = std::stoi(choice) - 1;
+    int startIndex = currentPage * itemsPerPage;
+    int endIndex = std::min(startIndex + itemsPerPage, static_cast<int>(inventory.size()));
+
+    if (itemIndex >= startIndex && itemIndex < endIndex) {
+        Item* selectedItem = inventory[itemIndex];
+        displayItemOptions(selectedItem);
+    }
+}
+void displayItemOptions(Item* selectedItem) {
+    std::cout << "Item Info: " << selectedItem->detail << std::endl;
+    std::cout << "1. Appraise" << std::endl;
+    std::cout << "2. Use Item" << std::endl;
+    std::cout << "3. Craft" << std::endl;
+    std::cout << "4. Discard Item" << std::endl;
+    std::cout << "5. Go Back" << std::endl;
+    std::cout << "Enter your choice: ";
+
+    int option;
+    std::cin >> option;
+
+    switch (option) {
+        case 1: {
+            // Appraise item
+            if (selectedItem->type == "weapon") {
+                Weapon* weaponItem = dynamic_cast<Weapon*>(selectedItem);
+                if (weaponItem != nullptr) {
+                    weaponItem->displayInfo();
+                }
+            } else if (selectedItem->type == "armor") {
+                Armor* armorItem = dynamic_cast<Armor*>(selectedItem);
+                if (armorItem != nullptr) {
+                    armorItem->displayInfo();
+                }
+            } else if (selectedItem->type == "Meds") {
+                Meds* medsItem = dynamic_cast<Meds*>(selectedItem);
+                if (medsItem != nullptr) {
+                    medsItem->displayInfo();
+                }
+            } else if (selectedItem->type == "Throwables") {
+                Throwables* throwablesItem = dynamic_cast<Throwables*>(selectedItem);
+                if (throwablesItem != nullptr) {
+                    throwablesItem->displayInfo();
+                }
+            } else {
+                std::cout << "Unknown item type." << std::endl;
+            }
+            break;
+        }
+            break;
+        case 2:
+            // Use item
+            if (selectedItem->type == "Throwables") {
+                std::cout << "Cannot use throwables outside of combat." << std::endl;
+            } else {
+                useSelectedItem(selectedItem);
+            }
+            break;
+        case 3:
+            // Craft option
+            displayCraftingOptions(selectedItem,0,9);
+            break;
+        case 4:{
+		
+	
+        	 auto it = std::find(inventory.begin(), inventory.end(), selectedItem);
+    if (it != inventory.end()) {
+        inventory.erase(it);
+        std::cout << "Item discarded." << std::endl;
+    }
+			break;}
+		case 5:
+			break;    
+        
+        // Add cases for other options if needed
+    }
+}
+void displayCraftingOptions(Item* selectedItem, int currentPage, int itemsPerPage) {
+    std::cout << "Select another item to craft with " << selectedItem->id << ":" << std::endl;
+
+    // Display inventory again with crossed out previously selected item
+    displayInventoryPageWithCrossedOut(selectedItem, currentPage, itemsPerPage);
+
+    // Display page navigation options
+    displayNavigationOptions();
+
+    std::string input;
+    std::cout << "Enter the index of the second item or 'Q' to cancel: ";
+    std::cin >> input;
+
+    if (input == "Q" || input == "q") {
+        std::cout << "Crafting canceled." << std::endl;
+        // Handle cancellation
+    } else {
+        int secondItemIndex = std::stoi(input) - 1;
+        int startIndex = currentPage * itemsPerPage;
+        int endIndex = std::min(startIndex + itemsPerPage, static_cast<int>(inventory.size()));
+
+        if (secondItemIndex >= startIndex && secondItemIndex < endIndex) {
+            Item* secondItem = inventory[secondItemIndex];
+
+            // Now you have both selected items (selectedItem and secondItem)
+            // Perform crafting operations here
+
+          inventory.push_back(craft(secondItem,selectedItem));
+        } else {
+           
+        }
+    }
+}
+void Party::displayInventoryPageWithCrossedOut(Item* selectedItem, int currentPage, int itemsPerPage) {
+    std::cout << "Inventory Page " << currentPage + 1 << std::endl;
+    std::cout << "-----------------------------------" << std::endl;
+
+    int startIndex = currentPage * itemsPerPage;
+    int endIndex = std::min(startIndex + itemsPerPage, static_cast<int>(inventory.size()));
+
+    // Print items in a 3x3 table
+    for (int i = startIndex; i < endIndex; i += 3) {
+        for (int j = 0; j < 3 && i + j < endIndex; ++j) {
+            if (inventory[i + j] == selectedItem) {
+                std::cout << "[X] ";
+            } else {
+                std::cout << "[" << i + j + 1 << "] ";
+            }
+            std::cout << inventory[i + j]->id << " (" << inventory[i + j]->type << ")\t";
+        }
+        std::cout << std::endl;
+    }
+
+
+}
+};

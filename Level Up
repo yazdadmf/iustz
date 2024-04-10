@@ -1,0 +1,66 @@
+    void levelup(int god){
+    	bool Check = false;
+    	if(Character(god).level != 50){
+    		Character(god).level++;
+    		cout << "Congratulation! " << Character(god).name << " level increased to " << Character(god).level << ".\nPlease select the ability you want to enhance." << endl ;
+    		while(!Check){
+				cout << "1.strength\n2.Health\n3.vigor\n4.aim\n5.Knowledge" << endl;
+	    		switch (input({"1", "2", "3", "4", "5"})){
+	    			case 1:
+	    				if(Character(god).strength!=10){
+	    					Character(god).strength++;
+	    					cout << "strength level increased successfully to: " << Character(god).strength << endl;
+	    					check = true;
+						}
+						else{
+							cout << "Your strength level is 10.(MAX) \nPlease choose another option!"
+						}
+						break;
+	    			case 2:
+	    				if(Character(god).Health!=10){
+	    					Character(god).Health++;
+	    					cout << "Health level increased successfully to: " << Character(god).Health << endl;
+	    					check = true;
+						}
+						else{
+							cout << "Your Health level is 10.(MAX) \nPlease choose another option!"
+						}
+						break;
+	    			case 3:
+	    				if(Character(god).vigor!=10){
+	    					Character(god).vigor++;
+	    					cout << "Vigor level increased successfully to: " << Character(god).vigor << endl;
+	    					check = true;
+						}
+						else{
+							cout << "Your vigor level is 10.(MAX) \nPlease choose another option!"
+						}
+						break;
+	    			case 4:
+	    				if(Character(god).aim!=10){
+	    					Character(god).aim++;
+	    					cout << "Aim level increased successfully to: " << Character(god).aim << endl;
+	    					check = true;
+						}
+						else{
+							cout << "Your Aim level is 10.(MAX) \nPlease choose another option!"
+						}
+						break;
+	    			case 5:
+	    				if(Character(god).Knowledge!=10){
+	    					Character(god).Knowledge++;
+	    					cout << "Knowledge level increased successfully to: " << Character(god).Knowledge << endl;
+	    					check = true;
+						}
+						else{
+							cout << "Your Knowledge level is 10.(MAX) \nPlease choose another option!"
+						}
+						break;
+				}
+			}
+		}
+		else{
+			cout << "Your level is maximum, which means it is 50!" << endl;
+			cout << "You can't upgrade it anymore." << endl;
+		}
+	}

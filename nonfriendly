@@ -1,0 +1,15 @@
+#ifndef NONFREINDLY_H
+#define NONFREINDLY_H
+
+#include <string>
+#include <vector>
+using namespace std;
+class nonfreindly{
+    public:
+    virtual ~nonfreindly() {}
+	string type;
+	string gettype(){return type;}
+};
+
+
+#endif // NONFREINDLY_H
