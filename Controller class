@@ -1,0 +1,90 @@
+    class Controller {
+    public:
+        void attack(Character& char1,std::vector<std::pair<int, std::string>> effects,Human_enemy& zombie);
+	    void applyEffects(Human_enemy& zombie,std::vector<std::pair<int, std::string>> effects){
+	    	
+	        int damage=0;
+	        
+		    for (int i=0;i<effects.size();i++) {
+		       
+	            if(effects[i].first>0){
+		        string effectName = effects[i].second;
+		
+		        if (effectName == "fire") {
+		           
+		                damage += 5;
+		        } 
+				else if (effectName == "freeze") {
+		            damage += 4;
+		        } 
+	            effects[i].first-=1;}
+	            else{
+	                 effects.erase(effects.begin() + i);
+	                 i--;
+	            }
+		    }
+	        zombie.HP-=damage;
+	        if(zombie.HP>0){}
+	        else{zombie.HP=0;}}
+	    void getHit(int DAM, int bodypart,Human_enemy& zombie){
+        int damageTaken=DAM;
+    
+        if(rand()%10==0){ damageTaken*=0.7;
+        cout<<"-"<<zombie.id<<"Blocked"<<endl;}
+        switch (bodypart) {
+	        case 1:
+	           
+	            std::cout << "- " << zombie.id << " took ";
+	            color(std::to_string(damageTaken), "red");
+	            std::cout << " damage to the head!" << std::endl;
+	            break;
+	        case 2:
+	            
+	            std::cout << "- " << zombie.id << " took ";
+	            color(std::to_string(damageTaken), "red");
+	            std::cout << " damage to the body!" << std::endl;
+	            break;
+	        case 3:
+	         
+	            std::cout << "- " << zombie.id << " took ";
+	            color(std::to_string(damageTaken), "red");
+	            std::cout << " damage to the lower body!" << std::endl;
+	            break;
+	        default:
+	            std::cout << "- " << zombie.id << " took ";
+	            color(std::to_string(damageTaken), "red");
+	            std::cout << " damage!" << std::endl;
+	            break;
+    	}
+       zombie.HP-= damageTaken;
+    };
+	    void gethit1(Throwables* thrown,Human_enemy& zombie){
+	        zombie.gethit(thrown->instantDamage,2);
+	        vector<pair<int,string>>effectsh=thrown->effects;
+	        zombie.addeffects(effectsh);
+	        delete thrown;
+		} 
+	    int moddifier(string stat,std::vector<std::pair<int, std::string>> effects){
+	        int ret=1;
+	        for(int i=0;i<effects.size();i++){
+	            if(effects[i].second==stat+"+"){
+	                cout<<"-applied streght moddifer";
+	                ret*=1.2;
+	            }
+	            else if((effects[i].second==stat+"-")){
+	                ret*=0.9;
+	            }
+	            else if((effects[i].second=="stun")){
+	                cout<<"-ebemy is stuned";
+	                ret=0;
+	            }
+	            else if((effects[i].second=="slip")){
+	                if(!(rand()%4)){cout<<"-enemy sliped";ret=0;}
+	            }
+	            else if((effects[i].second=="confusion")){
+	                if(!(rand()%2)){cout<<"-enemy is confused";ret=0.5;}
+	            }
+	        }
+	        return ret;
+	    }
+		}; 
