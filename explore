@@ -1,0 +1,58 @@
+void explore(Party &party, int &fight, int &empty, int &shop, int &fishing, int &round)
+{
+
+    while (round != 6)
+    {
+        int randomChoice = rand() % 10 + 1; // Generate a random number between 1 and 10
+
+        if ((randomChoice <= 4 && fight != 3) || round == 0)
+        {
+            int partylevel=20;
+            encounter(party, factory(partylevel));
+            int ran = rand() % 5;
+            party.addLootToInventory(generateRandomLoot(ran, ran, ran, ran));
+            party.levelup();
+            fight++;
+            return;
+        }
+        else if (randomChoice <= 7&& shop != 1)
+        {
+            shopintraction(party);   
+            shop++;
+            return;
+        }
+        else if (randomChoice <= 9 && fishing != 1)
+        {
+            fishingintraction(party);
+            fishing++;
+            return;
+        }
+        else if (randomChoice == 10 && empty != 1)
+        {
+           cout << "Finally, a quiet place where you can rest. Would you like to save? (y/n): ";
+        char saveResponse;
+        cin >> saveResponse;
+        if (saveResponse == 'y' || saveResponse == 'Y') {
+        cout << "Your progress has been saved." << endl;
+        } else {
+        cout << "Alright, no problem. Let's continue." << endl;
+        }
+
+        cout << "Heads or tails? ";
+        if (rand() % 2) {
+        cout << "It's heads!" << endl;
+        } else {
+        cout << "It's tails!" << endl;
+        }
+            return;
+        }
+
+        round++;
+    }
+
+    fight = 0;
+    shop = 0;
+    fishing = 0;
+    empty = 0;
+    round = 0;
+}
