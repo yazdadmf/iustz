@@ -1,5 +1,0 @@
-    void checkforlevelup(){
-		if(Zombie.health == 0){
-			levelup();
-			}
-		}
