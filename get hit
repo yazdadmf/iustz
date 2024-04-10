@@ -1,0 +1,32 @@
+	    void getHit(int DAM, int bodypart,Human_enemy& zombie){
+        int damageTaken=DAM;
+    
+        if(rand()%10==0){ damageTaken*=0.7;
+        cout<<"-"<<zombie.id<<"Blocked"<<endl;}
+        switch (bodypart) {
+	        case 1:
+	           
+	            std::cout << "- " << zombie.id << " took ";
+	            color(std::to_string(damageTaken), "red");
+	            std::cout << " damage to the head!" << std::endl;
+	            break;
+	        case 2:
+	            
+	            std::cout << "- " << zombie.id << " took ";
+	            color(std::to_string(damageTaken), "red");
+	            std::cout << " damage to the body!" << std::endl;
+	            break;
+	        case 3:
+	         
+	            std::cout << "- " << zombie.id << " took ";
+	            color(std::to_string(damageTaken), "red");
+	            std::cout << " damage to the lower body!" << std::endl;
+	            break;
+	        default:
+	            std::cout << "- " << zombie.id << " took ";
+	            color(std::to_string(damageTaken), "red");
+	            std::cout << " damage!" << std::endl;
+	            break;
+    	}
+       zombie.HP-= damageTaken;
+    };
