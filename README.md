@@ -23,20 +23,25 @@ g++ main.cpp -o dalgh
 Dive into the immersive world of our survival game and enjoy these exciting features:
 
 **Exploration:** Embark on a journey across diverse landscapes, from abandoned cities to desolate wilderness areas. Encounter hidden treasures, mysterious ruins, and unexpected dangers.
+
 ![main menu1](https://github.com/yazdadmf/iustz/assets/154887581/6e006d5b-cd04-46e9-8a30-f8cf6ad6b8e0)
 
 **Combat:** Engage in tactical combat encounters with various adversaries, including hordes of zombies, hostile survivors, and otherworldly creatures. Strategize your attacks, utilize items, and defend your party to emerge victorious.
+
 ![attack1](https://github.com/yazdadmf/iustz/assets/154887581/36d130a1-18bb-46e6-95f2-8e6b05d99091)
 ![health bar1](https://github.com/yazdadmf/iustz/assets/154887581/672b9ac7-3f36-40bd-b829-e92807d2fd09)
 
 **Item Management:** Collect and manage a wide array of items, including weapons, armor, medical supplies, and throwable objects. Equip your party members with the best gear to enhance their combat prowess and survival chances.
+
 ![stats1](https://github.com/yazdadmf/iustz/assets/154887581/97a2cc0e-8b09-4cfd-8466-b98378b38cbd)
 
 **Party Management:** Lead and manage a group of diverse characters, each with unique abilities, strengths, and weaknesses. Customize your party composition, assign roles, and develop relationships among party members to strengthen teamwork and resilience.
+
 ![managing the party1](https://github.com/yazdadmf/iustz/assets/154887581/e38fe006-1047-4a63-94d8-1ae44fa5ffde)
 
 **Interactive Events:** Encounter dynamic events and challenges during your exploration, such as encounters with friendly or hostile NPCs, random encounters, environmental hazards, and moral dilemmas. Your choices and actions will shape the outcome of your adventure.
 **Economy and Trading:** Visit trade hubs, settlements, and makeshift markets to buy and sell goods. Negotiate prices, barter with merchants, and trade valuable resources to acquire essential supplies and equipment for your journey.
+
 ![shop menu1](https://github.com/yazdadmf/iustz/assets/154887581/56c1e4e9-addf-4759-b16a-45c0df0cb203)
 
 ![shop 1](https://github.com/yazdadmf/iustz/assets/154887581/40ffab43-f220-45b7-886e-38d822a7f3da)
@@ -66,6 +71,7 @@ Here's how to start your adventure in our survival game:
 #Fishing Minigame
 **Description:**
 The Fishing Minigame is a simple console-based game where players can experience the excitement of fishing in a virtual environment. Players cast their fishing line into the water and reel it in, aiming to catch as many fish as possible.
+
 ![fishing game](https://github.com/yazdadmf/iustz/assets/154887581/f80ac6b3-6f44-4d32-aced-d2161329a36e)
 
 ##How to Play:
