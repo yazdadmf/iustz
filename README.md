@@ -24,6 +24,7 @@ Dive into the immersive world of our survival game and enjoy these exciting feat
 
 **Exploration:** Embark on a journey across diverse landscapes, from abandoned cities to desolate wilderness areas. Encounter hidden treasures, mysterious ruins, and unexpected dangers.
 ![main menu1](https://github.com/yazdadmf/iustz/assets/154887581/6e006d5b-cd04-46e9-8a30-f8cf6ad6b8e0)
+
 **Combat:** Engage in tactical combat encounters with various adversaries, including hordes of zombies, hostile survivors, and otherworldly creatures. Strategize your attacks, utilize items, and defend your party to emerge victorious.
 ![attack1](https://github.com/yazdadmf/iustz/assets/154887581/36d130a1-18bb-46e6-95f2-8e6b05d99091)
 ![health bar1](https://github.com/yazdadmf/iustz/assets/154887581/672b9ac7-3f36-40bd-b829-e92807d2fd09)
@@ -37,6 +38,7 @@ Dive into the immersive world of our survival game and enjoy these exciting feat
 **Interactive Events:** Encounter dynamic events and challenges during your exploration, such as encounters with friendly or hostile NPCs, random encounters, environmental hazards, and moral dilemmas. Your choices and actions will shape the outcome of your adventure.
 **Economy and Trading:** Visit trade hubs, settlements, and makeshift markets to buy and sell goods. Negotiate prices, barter with merchants, and trade valuable resources to acquire essential supplies and equipment for your journey.
 ![shop menu1](https://github.com/yazdadmf/iustz/assets/154887581/56c1e4e9-addf-4759-b16a-45c0df0cb203)
+
 ![shop 1](https://github.com/yazdadmf/iustz/assets/154887581/40ffab43-f220-45b7-886e-38d822a7f3da)
 
 ###File Structure:
