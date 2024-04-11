@@ -44,6 +44,7 @@ Dive into the immersive world of our survival game and enjoy these exciting feat
 ![managing the party1](https://github.com/yazdadmf/iustz/assets/154887581/e38fe006-1047-4a63-94d8-1ae44fa5ffde)
 
 **Interactive Events:** Encounter dynamic events and challenges during your exploration, such as encounters with friendly or hostile NPCs, random encounters, environmental hazards, and moral dilemmas. Your choices and actions will shape the outcome of your adventure.
+
 **Economy and Trading:** Visit trade hubs, settlements, and makeshift markets to buy and sell goods. Negotiate prices, barter with merchants, and trade valuable resources to acquire essential supplies and equipment for your journey.
 
 ![shop menu1](https://github.com/yazdadmf/iustz/assets/154887581/56c1e4e9-addf-4759-b16a-45c0df0cb203)
