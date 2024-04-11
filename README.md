@@ -1,17 +1,17 @@
 # iustz
-#Game story:
+# Game story:
 
 
 **Description:**
 Welcome to our text-based survival game implemented in C++! This game offers a thrilling adventure where you must navigate through a post-apocalyptic world filled with dangers, challenges, and opportunities. Explore various locations, engage in strategic combat encounters, manage your party, and make crucial decisions to survive against all odds.
 
-###Requirements:
+### Requirements:
 To compile and run this project, ensure you have the following:
 
 * C++ compiler
 * Standard C++ libraries
 * Windows or Linux environment
-###Compilation and Execution:
+### Compilation and Execution:
 Follow these steps to compile and run the game:
 
 ##### 1.Compile the source code using your preferred C++ compiler. For example:
@@ -19,7 +19,7 @@ g++ main.cpp -o dalgh
 ##### 2.Run the compiled executable:
 | Windows | dalgh.exe |
 |   Linux | ./sdalgh  |
-###Features:
+### Features:
 Dive into the immersive world of our survival game and enjoy these exciting features:
 
 **Exploration:** Embark on a journey across diverse landscapes, from abandoned cities to desolate wilderness areas. Encounter hidden treasures, mysterious ruins, and unexpected dangers.
@@ -46,7 +46,7 @@ Dive into the immersive world of our survival game and enjoy these exciting feat
 
 ![shop 1](https://github.com/yazdadmf/iustz/assets/154887581/40ffab43-f220-45b7-886e-38d822a7f3da)
 
-###File Structure:
+### File Structure:
 Understand the organization of our project's files:
 
 * Item.h: Define the base Item class and its subclasses, including Armor, Weapon, and Meds.
@@ -57,7 +57,7 @@ Understand the organization of our project's files:
 * shop.h: Define the Shop class representing in-game shops where players can buy and sell items.
 * fishing.h: Define the FishingMinigame class, representing a mini-game for fishing activities.
 * main.cpp: Implement the game's main logic, including menus, gameplay mechanics, and user interactions.
-###Gameplay Instructions:
+### Gameplay Instructions:
 Here's how to start your adventure in our survival game:
 
 **1.**Launch the game and navigate the main menu to explore available options.
@@ -68,41 +68,41 @@ Here's how to start your adventure in our survival game:
 **6.**Visit shops to trade goods, acquire essential supplies, and upgrade your equipment. Spend currency wisely and seek out rare items to gain an edge in your quest for survival.
 **7.**Keep exploring, battling enemies, and overcoming challenges to uncover the secrets of the post-apocalyptic world and emerge as a resilient survivor.
 
-#Fishing Minigame
+# Fishing Minigame
 **Description:**
 The Fishing Minigame is a simple console-based game where players can experience the excitement of fishing in a virtual environment. Players cast their fishing line into the water and reel it in, aiming to catch as many fish as possible.
 
 ![fishing game](https://github.com/yazdadmf/iustz/assets/154887581/f80ac6b3-6f44-4d32-aced-d2161329a36e)
 
-##How to Play:
+## How to Play:
 
-###1.Starting the Game:
+### 1.Starting the Game:
 
 * Run the executable file to start the fishing minigame.
 * Follow the on-screen instructions to proceed.
-###2.Gameplay:
+### 2.Gameplay:
 
 * Press Enter to cast the fishing line into the water.
 * Repeatedly press the Spacebar to reel in the fishing line.
 * Catch a fish by reeling in enough times.
 * The game keeps track of the total number of fish caught.
-###3.Objective:
+### 3.Objective:
 
 * The main objective is to catch as many fish as possible within the allotted time.
 * Enjoy the relaxing atmosphere and immersive experience of virtual fishing.
-###4.Controls:
+### 4.Controls:
 
 * Press Enter to cast the fishing line.
 * Press Spacebar repeatedly to reel in the line.
 * Follow on-screen prompts for additional actions.
-###5.Features:
+### 5.Features:
 
 * Realistic casting and reeling mechanics.
 * Visual feedback for casting and reeling actions.
 * Random events to add variety to the gameplay.
 * Simple and intuitive controls for an enjoyable experience.
 
-###6.Requirements:
+### 6.Requirements:
 
 * This game requires a C++ compiler to build and run.
 * Compatible with Windows operating systems.
