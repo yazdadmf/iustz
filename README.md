@@ -17,8 +17,12 @@ Follow these steps to compile and run the game:
 ##### 1.Compile the source code using your preferred C++ compiler. For example:
 g++ main.cpp -o dalgh
 ##### 2.Run the compiled executable:
-| Windows | dalgh.exe |
-|   Linux | ./sdalgh  |
+
+| Operating System | Command     |
+|------------------|-------------|
+| Windows          | `dalgh.exe` |
+| Linux            | `./sdalgh`  |
+
 ### Features:
 Dive into the immersive world of our survival game and enjoy these exciting features:
 
@@ -60,13 +64,13 @@ Understand the organization of our project's files:
 ### Gameplay Instructions:
 Here's how to start your adventure in our survival game:
 
-**1.**Launch the game and navigate the main menu to explore available options.
-**2.**Choose "Explore" to begin your journey into the unknown. Traverse different locations, encounter diverse challenges, and collect valuable resources.
-**3.**Prepare for combat encounters by equipping your party members with weapons, armor, and healing items. Engage in strategic battles against enemies, using a variety of tactics to overcome tough opponents.
-**4.**Utilize the "Manage Party" option to view and customize your party composition, upgrade character abilities, and foster camaraderie among party members.
-**5.**Make wise decisions as you explore, interact with NPCs, and confront moral dilemmas. Your choices will influence the outcome of your adventure and shape the destiny of your party.
-**6.**Visit shops to trade goods, acquire essential supplies, and upgrade your equipment. Spend currency wisely and seek out rare items to gain an edge in your quest for survival.
-**7.**Keep exploring, battling enemies, and overcoming challenges to uncover the secrets of the post-apocalyptic world and emerge as a resilient survivor.
+1. Launch the game and navigate the main menu to explore available options.
+2. Choose "Explore" to begin your journey into the unknown. Traverse different locations, encounter diverse challenges, and collect valuable resources.
+3. Prepare for combat encounters by equipping your party members with weapons, armor, and healing items. Engage in strategic battles against enemies, using a variety of tactics to overcome tough opponents.
+4. Utilize the "Manage Party" option to view and customize your party composition, upgrade character abilities, and foster camaraderie among party members.
+5. Make wise decisions as you explore, interact with NPCs, and confront moral dilemmas. Your choices will influence the outcome of your adventure and shape the destiny of your party.
+6. Visit shops to trade goods, acquire essential supplies, and upgrade your equipment. Spend currency wisely and seek out rare items to gain an edge in your quest for survival.
+7. Keep exploring, battling enemies, and overcoming challenges to uncover the secrets of the post-apocalyptic world and emerge as a resilient survivor.
 
 # Fishing Minigame
 **Description:**
