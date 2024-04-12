@@ -1,8 +1,4 @@
 
-#ifndef MY_SYSTEM
-#define MY_SYSTEM
-#endif
-
 
 
 #include <iostream>
