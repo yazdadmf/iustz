@@ -202,15 +202,17 @@ public:
 
         // Display stats
         cout << "Stats:" << endl;
-        cout << "Vigor: ";
+        cout << "Health: ";
+        barandnumber(Health, 10, "red", 1);
+        cout << "  \nVigor: ";
         barandnumber(vigor, 10, "green", 1);
-        cout << " | Strength: ";
+        cout << " \nStrength: ";
         barandnumber(Strength, 10, "yellow", 1);
-        cout << " | Aim: ";
+        cout << "  \nAim: ";
         barandnumber(Aim, 10, "magenta", 1);
-        cout << " | Knowledge: ";
+        cout << "  \nKnowledge: ";
         barandnumber(Knowledge, 10, "blue", 1);
-        cout << endl;
+        cout <<"  "<<endl;
 
         // Display level
         cout << "Level: " << level << endl;
