@@ -1317,12 +1317,13 @@ void Human_enemy::Controller::attack(Character& Character, std::vector<std::pair
 				}
 	        }
 
-	        else if (zombie.getstate() == 2 && zombie.HP != zombie.maxHP){
-	            zombie.HP += 50;
+	        else if (zombie.getstate() == 2 ){
+	            zombie.HP += 20;
+                if(zombie.HP > zombie.maxHP){zombie.HP=zombie.maxHP;}
               cout << "The enemy is healing itself!" << endl;
 			}
 	
-	        else if (zombie.getstate() == 1 && zombie.HP != zombie.maxHP){
+	        else if (zombie.getstate() == 1){
 	        	Character.gethit1(&zombie.throwables);
             cout << "The enemy throws something at you!" << endl;
 	            }
