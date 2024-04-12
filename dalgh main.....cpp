@@ -825,7 +825,7 @@ int main()
     cout << "3. Exit\n";
 
     // Player chooses an option
-    cout << "Enter your choice: ";
+ 
     int choice = stoi(input({"1", "2", "3"}));
 
     Party party;
