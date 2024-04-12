@@ -177,9 +177,10 @@ if(tzname=="spartan soldier"){
 }
 
 		}
-    	int getstate (){
-    		return (rand() % 2 +1) * HP/maxHP;
+    int getstate (){
+    		return (rand() % 3 +1) * HP/maxHP;
 		}
+		
 		
        
 	      void addeffects(vector<pair<int,string>> neew){
