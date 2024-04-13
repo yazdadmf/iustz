@@ -1,5 +1,22 @@
 # iustz
 # Game story:
+As the music blared and the lights flashed, a group of friends crowded into a small apartment, ready to party. Beer cans littered the floor and a cloud of smoke hung in the air. But little did they know, their night was about to take a drastic turn. 
+ 
+As the clock struck midnight, everything suddenly went black. Confused and disoriented, the friends stumbled around in the dark, trying to figure out what was happening. Suddenly, a bright light appeared, and a booming voice echoed in their heads. 
+ 
+'I am the Almighty, the Creator of all worlds,' the voice said. 'You have been summoned here for a purpose.' 
+ 
+The friends looked at each other in shock, unsure of what was happening. The voice continued. 
+ 
+'In your world, you have been indulging in drugs and alcohol, poisoning your bodies and minds. But in this world, things are different. You have been brought here to learn and grow, to make amends for your past actions.' 
+ 
+The friends were suddenly transported to a vast, otherworldly land. The sky was a surreal lavender color and the ground was made of sparkling crystals. In front of them stood a majestic figure, their true form radiating with a divine glow. 
+ 
+'You must now face the consequences of your choices,' the deity said. 'But fear not, for I offer you a chance at redemption. Will you accept the challenge?' 
+ 
+The friends looked at each other, and with a sense of determination, they nodded. They knew this was their chance to make things right. 
+ 
+And so, their journey in this new world began. They faced challenges and obstacles, but they also found joy and purpose. As they learned and grew, they realized that this was the true party they had been searching for all along - a party of self-discovery and enlightenment. And they would never go back to their old ways again.
 
 
 **Description:**
