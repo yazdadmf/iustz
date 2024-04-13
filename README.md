@@ -62,6 +62,14 @@ Dive into the immersive world of our survival game and enjoy these exciting feat
 
 **Interactive Events:** Encounter dynamic events and challenges during your exploration, such as encounters with friendly or hostile NPCs, random encounters, environmental hazards, and moral dilemmas. Your choices and actions will shape the outcome of your adventure.
 
+* save.h: This code provides functions to save and load party data to and from JSON files. It includes functionalities to serialize and deserialize party information, including character attributes, inventory items, and wallet data.
+To use these functions, follow these steps:
+Ensure that the json.hpp file is included and properly linked to your project.
+Define your party data structure (Party and Character) with attributes such as name, stamina, vigor, etc.
+Use the saveParty function to save your party data to a JSON file
+
+* printstuff.h: Contains utility functions for printing formatted text and colored output.
+Simulates typing effect for a given text, Displays a progress bar with customizable colors and increments, Flashes the specified text on the screen for a specified duration, effect by flashing red background with the text, Animates flying underscores across the console screen, Displays an introductory animation with flying underscores, and ......
 **Economy and Trading:** Visit trade hubs, settlements, and makeshift markets to buy and sell goods. Negotiate prices, barter with merchants, and trade valuable resources to acquire essential supplies and equipment for your journey.
 
 ![shop menu1](https://github.com/yazdadmf/iustz/assets/154887581/56c1e4e9-addf-4759-b16a-45c0df0cb203)
