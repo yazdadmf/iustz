@@ -62,14 +62,6 @@ Dive into the immersive world of our survival game and enjoy these exciting feat
 
 **Interactive Events:** Encounter dynamic events and challenges during your exploration, such as encounters with friendly or hostile NPCs, random encounters, environmental hazards, and moral dilemmas. Your choices and actions will shape the outcome of your adventure.
 
-* save.h: This code provides functions to save and load party data to and from JSON files. It includes functionalities to serialize and deserialize party information, including character attributes, inventory items, and wallet data.
-To use these functions, follow these steps:
-Ensure that the json.hpp file is included and properly linked to your project.
-Define your party data structure (Party and Character) with attributes such as name, stamina, vigor, etc.
-Use the saveParty function to save your party data to a JSON file
-
-* printstuff.h: Contains utility functions for printing formatted text and colored output.
-Simulates typing effect for a given text, Displays a progress bar with customizable colors and increments, Flashes the specified text on the screen for a specified duration, effect by flashing red background with the text, Animates flying underscores across the console screen, Displays an introductory animation with flying underscores, and ......
 **Economy and Trading:** Visit trade hubs, settlements, and makeshift markets to buy and sell goods. Negotiate prices, barter with merchants, and trade valuable resources to acquire essential supplies and equipment for your journey.
 
 ![shop menu1](https://github.com/yazdadmf/iustz/assets/154887581/56c1e4e9-addf-4759-b16a-45c0df0cb203)
@@ -87,6 +79,28 @@ Understand the organization of our project's files:
 * shop.h: Define the Shop class representing in-game shops where players can buy and sell items.
 * fishing.h: Define the FishingMinigame class, representing a mini-game for fishing activities.
 * main.cpp: Implement the game's main logic, including menus, gameplay mechanics, and user interactions.
+  
+* save.h: This code provides functions to save and load party data to and from JSON files. It includes functionalities to serialize and deserialize party information, including character attributes, inventory items, and wallet data.
+To use these functions, follow these steps:
+Ensure that the json.hpp file is included and properly linked to your project.
+Define your party data structure (Party and Character) with attributes such as name, stamina, vigor, etc.
+Use the saveParty function to save your party data to a JSON file
+
+* printstuff.h: Contains utility functions for printing formatted text and colored output.
+Simulates typing effect for a given text, Displays a progress bar with customizable colors and increments, Flashes the specified text on the screen for a specified duration, effect by flashing red background with the text, Animates flying underscores across the console screen, Displays an introductory animation with flying underscores, and ......
+
+* human enemy.h: The Human_enemy class allows for the creation of human enemy characters with distinct attributes such as health, stamina, weapons, and throwables.
+Features
+Character Attributes: Each human enemy character has attributes such as health points
+(HP), maximum HP, stamina, and damage dealt.
+
+* Weapon and Throwables: Human enemies are equipped with weapons and throwable items that affect combat outcomes.
+Description: Each human enemy has a detailed description, providing context and flavor to their role within the game.
+Effects: Human enemies can apply and receive various effects during combat, affecting their performance and behavior.
+View and Controller Classes: The class includes nested View and Controller classes for managing display and logic related to human enemy characters.
+
+* throwables.h: The Throwables class is designed to represent a variety of throwable items that can be used within a game or simulation environment. Throwables may cause instant damage upon impact with a target. Some throwables have special effects that affect the target, such as fire, stun, freeze, confusion, or slip. The class provides a method to display detailed information about each throwable, including its ID, effects, and instant damage.
+  
 ### Gameplay Instructions:
 Here's how to start your adventure in our survival game:
 
